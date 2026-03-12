@@ -660,5 +660,200 @@
     "correta": "D",
     "comentario": "O bloco começa com 'if' e é finalizado com 'fi' (if escrito de trás para frente). Em loops 'for/while', a terminação usada é 'done'.",
     "id": 1773320870805
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Em sistemas operacionais, o que caracteriza uma 'Chamada de Sistema' (System Call)?",
+    "opcoes": {
+      "A": "É uma interrupção de hardware gerada pelo teclado ou mouse.",
+      "B": "É o mecanismo pelo qual um programa em modo usuário solicita um serviço privilegiado ao kernel do SO.",
+      "C": "É uma requisição de rede enviada de um cliente para um servidor via protocolo TCP/IP.",
+      "D": "É o processo de inicialização do sistema (boot) gravado na BIOS."
+    },
+    "correta": "B",
+    "comentario": "As syscalls são a interface entre os aplicativos e o SO. Quando um programa precisa ler um arquivo ou alocar memória, ele invoca uma syscall, alterando o contexto temporariamente para o modo kernel.",
+    "id": 1773323001313
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Para que um estado de impasse (Deadlock) ocorra entre processos, quatro condições simultâneas são necessárias: Exclusão Mútua, Posse e Espera, Não Preempção e qual outra?",
+    "opcoes": {
+      "A": "Espera Circular",
+      "B": "Inanição (Starvation)",
+      "C": "Paginação por Demanda",
+      "D": "Condição de Corrida (Race Condition)"
+    },
+    "correta": "A",
+    "comentario": "A Espera Circular ocorre quando existe uma cadeia fechada de processos, onde cada um detém um recurso solicitado pelo próximo processo da cadeia, travando todos.",
+    "id": 1773322996762
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Nos sistemas de arquivos modernos, como NTFS (Windows) e ext4 (Linux), qual é a principal função do recurso de 'Journaling'?",
+    "opcoes": {
+      "A": "Criptografar os dados do disco em tempo real.",
+      "B": "Comprimir arquivos antigos para liberar espaço.",
+      "C": "Registrar as transações em um log antes de efetivá-las no disco, permitindo recuperação rápida após falhas de energia.",
+      "D": "Monitorar quais usuários acessaram determinados arquivos na rede."
+    },
+    "correta": "C",
+    "comentario": "O Journaling previne a corrupção do sistema de arquivos anotando as mudanças pendentes num 'diário' (journal). Se o sistema desligar abruptamente, ele usa esse log para restaurar a consistência.",
+    "id": 1773323002824
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "No Linux, para buscar por sequências de texto ou expressões regulares DENTRO do conteúdo de vários arquivos, qual comando deve ser utilizado?",
+    "opcoes": {
+      "A": "find",
+      "B": "locate",
+      "C": "grep",
+      "D": "whereis"
+    },
+    "correta": "C",
+    "comentario": "O comando 'grep' procura por padrões de texto dentro de arquivos. Já o comando 'find' busca por arquivos ou diretórios baseando-se em seus nomes, tamanhos ou permissões.",
+    "id": 1773322995449
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Qual comando Linux é utilizado para iniciar a execução de um programa com uma prioridade de escalonamento (CPU) diferente da prioridade padrão?",
+    "opcoes": {
+      "A": "top",
+      "B": "nice",
+      "C": "renice",
+      "D": "bg"
+    },
+    "correta": "B",
+    "comentario": "O 'nice' lança um novo processo com um valor de prioridade (niceness) específico. O 'renice' altera a prioridade de um processo que já está em execução.",
+    "id": 1773323002450
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "O comando 'sysctl' no ambiente Linux é utilizado para:",
+    "opcoes": {
+      "A": "Gerenciar o sistema de inicialização systemd e os serviços locais.",
+      "B": "Ler e modificar parâmetros do kernel em tempo de execução, interagindo com o diretório /proc/sys.",
+      "C": "Monitorar o tráfego de rede das interfaces ethernet.",
+      "D": "Alterar as senhas dos usuários criptografadas no arquivo /etc/shadow."
+    },
+    "correta": "B",
+    "comentario": "O sysctl permite fazer tuning (ajuste de performance) e alterar configurações de rede e memória do kernel do Linux sem precisar reiniciar a máquina.",
+    "id": 1773322995379
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Durante a administração do LVM no Linux, após aumentar o tamanho de um Volume Lógico (Logical Volume) com o comando 'lvextend', qual é a próxima etapa obrigatória para que o sistema operacional reconheça o novo espaço?",
+    "opcoes": {
+      "A": "Reiniciar o servidor.",
+      "B": "Redimensionar o sistema de arquivos (ex: usando resize2fs ou xfs_growfs).",
+      "C": "Executar o comando pvcreate no disco.",
+      "D": "Alterar as permissões da pasta raiz com chmod."
+    },
+    "correta": "B",
+    "comentario": "Aumentar o volume lógico apenas aloca os blocos físicos. É imprescindível expandir também o sistema de arquivos (file system) formatado sobre esse volume para que ele ocupe o novo espaço.",
+    "id": 1773323002355
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Na programação em Bash Shell, qual é a diferença entre encapsular uma variável entre aspas simples (' ') e aspas duplas (\" \")?",
+    "opcoes": {
+      "A": "Não há diferença, ambas expandem a variável normalmente.",
+      "B": "Aspas simples executam a variável como um comando, aspas duplas apenas a exibem.",
+      "C": "Aspas duplas permitem a expansão (substituição) do valor da variável, enquanto aspas simples tratam o texto de forma estritamente literal (sem expansão).",
+      "D": "Aspas simples são usadas apenas para variáveis numéricas, aspas duplas para strings."
+    },
+    "correta": "C",
+    "comentario": "Em bash, echo \"$USER\" exibirá o nome do usuário (ex: root). Já echo '$USER' imprimirá literalmente o texto '$USER'.",
+    "id": 1773322995965
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Ao executar um script longo no terminal Linux, o usuário aperta 'Ctrl+Z'. O que acontece com o processo correspondente a esse script?",
+    "opcoes": {
+      "A": "É encerrado imediatamente (morto).",
+      "B": "É pausado (suspenso) e enviado para o background, liberando o terminal.",
+      "C": "É desanexado do terminal e continua rodando ativamente em background.",
+      "D": "Sua prioridade de CPU é reduzida para o mínimo."
+    },
+    "correta": "B",
+    "comentario": "O atalho 'Ctrl+Z' envia o sinal SIGTSTP, que suspende o processo. Para retomá-lo rodando em segundo plano, usa-se o comando 'bg'. Para trazê-lo de volta, usa-se 'fg'.",
+    "id": 1773322998001
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "No Active Directory (Windows Server), existem 5 funções Mestre de Operações (FSMO). Qual delas é exclusiva em toda a Floresta (Forest-wide) e é responsável por gerenciar a estrutura da base de dados, como classes e atributos?",
+    "opcoes": {
+      "A": "Emulador PDC",
+      "B": "Mestre de Infraestrutura (Infrastructure Master)",
+      "C": "Mestre RID (RID Master)",
+      "D": "Mestre de Esquema (Schema Master)"
+    },
+    "correta": "D",
+    "comentario": "Apenas um DC em toda a floresta detém a função Schema Master. Ele controla todas as atualizações e modificações no esquema do Active Directory.",
+    "id": 1773322995979
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Qual é a ordem correta de aplicação das Políticas de Grupo (GPOs) na inicialização de um computador em um domínio Windows (da primeira para a última a ser aplicada)?",
+    "opcoes": {
+      "A": "Local, Site, Domínio, OU (LSDOU)",
+      "B": "Domínio, OU, Site, Local",
+      "C": "OU, Domínio, Site, Local",
+      "D": "Site, Local, OU, Domínio"
+    },
+    "correta": "A",
+    "comentario": "As GPOs seguem o fluxo LSDOU. A última política aplicada (OU) tem maior precedência e sobrescreve as configurações conflitantes das políticas aplicadas anteriormente.",
+    "id": 1773322998774
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Em um servidor de arquivos Windows com sistema NTFS, um usuário pertence ao Grupo A (que tem permissão de Leitura) e ao Grupo B (que tem permissão Negar Leitura) para uma mesma pasta. Qual será a permissão efetiva desse usuário?",
+    "opcoes": {
+      "A": "Ele terá permissão de Leitura, pois regras permissivas anulam restritivas.",
+      "B": "O acesso será negado, pois uma permissão explícita de 'Negar' (Deny) sempre se sobrepõe a qualquer permissão 'Permitir' (Allow).",
+      "C": "O Active Directory solicitará a senha do Administrador para liberar o acesso.",
+      "D": "Ele poderá ler o arquivo apenas em modo de segurança."
+    },
+    "correta": "B",
+    "comentario": "Nas regras de segurança do NTFS, o 'Deny' absoluto tem a prioridade mais alta no processamento da ACL (Access Control List).",
+    "id": 1773322999893
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "No gerenciamento de domínios Windows, qual a diferença fundamental entre uma Unidade Organizacional (OU) e um Contêiner genérico (como as pastas padrão 'Users' ou 'Computers')?",
+    "opcoes": {
+      "A": "Contêineres não podem armazenar contas de usuários, apenas OUs podem.",
+      "B": "É possível vincular GPOs (Group Policies) diretamente a uma OU, mas não a um Contêiner genérico.",
+      "C": "OUs existem apenas em domínios locais, Contêineres servem para sincronização com o Azure.",
+      "D": "Não há diferença, são sinônimos no Active Directory."
+    },
+    "correta": "B",
+    "comentario": "A principal restrição dos contêineres nativos (Builtin, Computers, Users) é a impossibilidade de aplicar Políticas de Grupo diretamente neles. Para isso, devem ser criadas OUs.",
+    "id": 1773323000760
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Na conectividade TCP/IP, qual é a função essencial da configuração do 'Gateway Padrão' em um sistema operacional de rede?",
+    "opcoes": {
+      "A": "Traduzir nomes de domínio FQDN para endereços IP.",
+      "B": "Identificar a máscara de sub-rede do equipamento.",
+      "C": "Indicar o endereço IP do roteador que o sistema deve usar para enviar pacotes a computadores que não pertencem à sua própria rede local.",
+      "D": "Garantir a criptografia ponta-a-ponta na rede LAN."
+    },
+    "correta": "C",
+    "comentario": "O Gateway (porta de saída) é o roteador local. O sistema o procura quando analisa o IP de destino e percebe que ele está fora da sua própria sub-rede.",
+    "id": 1773323002440
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "O proxy Squid oferece excelente controle de acesso corporativo, mas sua outra função central como 'Proxy Cache' tem o objetivo de:",
+    "opcoes": {
+      "A": "Ocultar o endereço MAC dos computadores da rede interna na internet.",
+      "B": "Armazenar localmente cópias de objetos web acessados com frequência, reduzindo o consumo do link de internet e melhorando o tempo de resposta para os clientes.",
+      "C": "Servir como um banco de dados SQL em memória para a rede.",
+      "D": "Forçar a resolução segura de domínios via DNSSEC."
+    },
+    "correta": "B",
+    "comentario": "O cache do Squid salva páginas, imagens e downloads recorrentes. Se outro usuário requisitar o mesmo conteúdo, o Squid o entrega da rede local instantaneamente, poupando a banda da WAN.",
+    "id": 1773322994233
   }
 ]
