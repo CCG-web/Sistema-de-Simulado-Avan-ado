@@ -1635,5 +1635,1175 @@
     "correta": "A",
     "comentario": "Contêineres são efêmeros e descartáveis. Alterações feitas 'na mão' dentro de um contêiner rodando se perdem quando ele morre. A infraestrutura imutável garante que todo deploy seja 100% reproduzível a partir da imagem original.",
     "id": 1773327627894
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "Em relação à abrangência geográfica das redes de computadores, como é classificada uma rede que interliga filiais de uma empresa em diferentes países ou continentes?",
+    "opcoes": {
+      "A": "LAN (Local Area Network)",
+      "B": "MAN (Metropolitan Area Network)",
+      "C": "WAN (Wide Area Network)",
+      "D": "PAN (Personal Area Network)"
+    },
+    "correta": "C",
+    "comentario": "A WAN cobre áreas geográficas extensas (países, continentes), utilizando links de telecomunicações de longa distância. A LAN é local e a MAN é metropolitana (cidade).",
+    "id": 1773327825268
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "Qual topologia de rede física utiliza um nó central (como um switch) ao qual todos os outros dispositivos estão conectados diretamente?",
+    "opcoes": {
+      "A": "Barramento (Bus)",
+      "B": "Anel (Ring)",
+      "C": "Malha (Mesh)",
+      "D": "Estrela (Star)"
+    },
+    "correta": "D",
+    "comentario": "Na topologia em Estrela, todos os nós se ligam a um equipamento central. Se um cabo falhar, apenas aquele nó perde conexão, não afetando a rede inteira.",
+    "id": 1773327822501
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "Sobre os meios de transmissão, qual é a principal diferença prática entre a fibra óptica Monomodo e a Multimodo?",
+    "opcoes": {
+      "A": "A Monomodo é mais barata e usada para curtas distâncias, enquanto a Multimodo alcança milhares de quilômetros.",
+      "B": "A Monomodo possui um núcleo mais fino e permite o tráfego de um único feixe de luz (laser), alcançando distâncias muito maiores que a Multimodo.",
+      "C": "A Multimodo não sofre atenuação magnética, mas a Monomodo sim.",
+      "D": "A fibra Monomodo transmite dados em formato analógico."
+    },
+    "correta": "B",
+    "comentario": "A fibra Monomodo (Single-mode) é ideal para redes WAN de longa distância. A Multimodo (Multi-mode) possui núcleo mais largo, usa LEDs e atende curtas distâncias (LANs).",
+    "id": 1773327821718
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "Qual a diferença entre cabos de par trançado UTP e STP?",
+    "opcoes": {
+      "A": "O UTP possui blindagem metálica contra interferência eletromagnética (EMI), o STP não.",
+      "B": "O UTP é utilizado exclusivamente em telefonia, e o STP em dados.",
+      "C": "O STP possui uma malha ou folha de blindagem (Shielded) para proteger contra ruídos eletromagnéticos, enquanto o UTP (Unshielded) não possui.",
+      "D": "O UTP suporta até 10 Gbps, enquanto o STP suporta apenas 100 Mbps."
+    },
+    "correta": "C",
+    "comentario": "STP (Shielded Twisted Pair) tem blindagem para ambientes com alta interferência. O UTP (Unshielded Twisted Pair) não possui blindagem e é o mais comum e barato em ambientes corporativos normais.",
+    "id": 1773327817629
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "No modelo OSI, qual camada é responsável pela entrega de quadros (frames) de nó a nó na mesma rede local utilizando endereços físicos (MAC)?",
+    "opcoes": {
+      "A": "Camada Física (L1)",
+      "B": "Camada de Enlace de Dados (L2)",
+      "C": "Camada de Rede (L3)",
+      "D": "Camada de Transporte (L4)"
+    },
+    "correta": "B",
+    "comentario": "A camada de Enlace lida com o endereçamento MAC e a detecção de erros no link físico, garantindo a entrega local dos quadros.",
+    "id": 1773327820495
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "Qual camada do modelo OSI é encarregada do roteamento dos pacotes e da atribuição de endereços lógicos (IP) para interligar redes distintas?",
+    "opcoes": {
+      "A": "Enlace de Dados",
+      "B": "Sessão",
+      "C": "Apresentação",
+      "D": "Rede"
+    },
+    "correta": "D",
+    "comentario": "A camada de Rede (L3) determina a melhor rota e utiliza endereçamento IP para transportar pacotes fim a fim através de múltiplas redes.",
+    "id": 1773327819878
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "A arquitetura TCP/IP condensa algumas camadas do modelo OSI. As camadas de Aplicação, Apresentação e Sessão do OSI correspondem a qual camada no TCP/IP?",
+    "opcoes": {
+      "A": "Camada de Acesso à Rede",
+      "B": "Camada de Transporte",
+      "C": "Camada de Internet",
+      "D": "Camada de Aplicação"
+    },
+    "correta": "D",
+    "comentario": "O TCP/IP possui 4 camadas (na visão clássica). A camada de Aplicação do TCP/IP absorve as funções de Aplicação, Apresentação e Sessão do modelo OSI.",
+    "id": 1773327825349
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "O endereçamento IPv4 e o IPv6 são formados, respectivamente, por quantos bits?",
+    "opcoes": {
+      "A": "32 bits e 128 bits",
+      "B": "64 bits e 128 bits",
+      "C": "32 bits e 256 bits",
+      "D": "128 bits e 32 bits"
+    },
+    "correta": "A",
+    "comentario": "O IPv4 possui 32 bits (4 octetos separados por ponto). O IPv6 possui 128 bits, representados no formato hexadecimal em 8 grupos de 16 bits separados por dois pontos.",
+    "id": 1773327818386
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "Dada a máscara de sub-rede IPv4 /24 (255.255.255.0), quantos endereços IP úteis estão disponíveis para atribuir aos hosts (computadores)?",
+    "opcoes": {
+      "A": "256",
+      "B": "255",
+      "C": "254",
+      "D": "128"
+    },
+    "correta": "C",
+    "comentario": "Em um /24 sobram 8 bits para hosts (2^8 = 256). Subtrai-se 2 (o endereço da rede e o endereço de broadcast), restando 254 IPs úteis para as máquinas.",
+    "id": 1773327822604
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "O IPsec é um conjunto de protocolos para comunicações seguras. Em qual camada do modelo OSI ele opera nativamente?",
+    "opcoes": {
+      "A": "Aplicação (L7)",
+      "B": "Transporte (L4)",
+      "C": "Rede (L3)",
+      "D": "Enlace (L2)"
+    },
+    "correta": "C",
+    "comentario": "O IPsec criptografa e autentica pacotes IP no nível da Camada de Rede (Layer 3), sendo transparente para as aplicações e o transporte TCP/UDP.",
+    "id": 1773327818360
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "Em relação aos protocolos da camada de transporte, qual é a principal diferença entre TCP e UDP?",
+    "opcoes": {
+      "A": "O UDP é orientado à conexão e garante a entrega, enquanto o TCP é um serviço não confiável (datagrama).",
+      "B": "O TCP é orientado à conexão, garantindo entrega, ordem e controle de fluxo, enquanto o UDP não possui esses controles, sendo mais rápido.",
+      "C": "O TCP funciona apenas em LANs, enquanto o UDP funciona apenas na Internet.",
+      "D": "Ambos garantem entrega de pacotes, mas o UDP suporta criptografia nativa."
+    },
+    "correta": "B",
+    "comentario": "O TCP é confiável e estabelece conexão (three-way handshake). O UDP dispara os pacotes (best-effort) sem esperar confirmação, ideal para streaming e VoIP.",
+    "id": 1773327823433
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "No envio e recebimento de e-mails, quais protocolos são tradicionalmente utilizados, respectivamente?",
+    "opcoes": {
+      "A": "POP3 (envio) e SMTP (recebimento)",
+      "B": "IMAP (envio) e POP3 (recebimento)",
+      "C": "SMTP (envio) e POP3 (recebimento)",
+      "D": "FTP (envio) e SMTP (recebimento)"
+    },
+    "correta": "C",
+    "comentario": "O SMTP (Simple Mail Transfer Protocol) é usado para ENVIAR mensagens. O POP3 (Post Office Protocol) é usado para BAIXAR (receber) as mensagens no cliente local.",
+    "id": 1773327825195
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "Qual protocolo da suíte TCP/IP é responsável por enviar mensagens de erro e de status operacional, sendo a base de funcionamento do comando 'ping'?",
+    "opcoes": {
+      "A": "ARP",
+      "B": "ICMP",
+      "C": "DHCP",
+      "D": "IGMP"
+    },
+    "correta": "B",
+    "comentario": "O ICMP (Internet Control Message Protocol) atua na camada de rede relatando falhas e informando controle, como os Echo Requests/Replies utilizados pelo ping.",
+    "id": 1773327824925
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "Na arquitetura de Telefonia IP (VoIP), qual protocolo é amplamente adotado exclusivamente para o processo de SINALIZAÇÃO (estabelecer, modificar e terminar a chamada)?",
+    "opcoes": {
+      "A": "RTP",
+      "B": "SIP",
+      "C": "SMTP",
+      "D": "SSH"
+    },
+    "correta": "B",
+    "comentario": "O SIP (Session Initiation Protocol) lida com a sinalização da chamada. O transporte efetivo da voz (mídia) ocorre separadamente, através do protocolo RTP.",
+    "id": 1773327818907
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "O padrão IEEE 802 abrange a definição de diversas redes. Os subcomitês 802.3 e 802.11 referem-se, respectivamente, a:",
+    "opcoes": {
+      "A": "Ethernet (Redes Cabeadas) e Wi-Fi (Redes Sem Fio)",
+      "B": "Wi-Fi e Bluetooth",
+      "C": "Token Ring e Ethernet",
+      "D": "VLANs e MPLS"
+    },
+    "correta": "A",
+    "comentario": "O IEEE 802.3 define as redes LAN cabeadas padrão Ethernet. O IEEE 802.11 define as redes WLAN conhecidas comercialmente como Wi-Fi.",
+    "id": 1773327826174
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "Para contornar o problema de colisões em redes sem fio (onde a detecção física de colisão é inviável), o padrão 802.11 utiliza qual método de acesso ao meio?",
+    "opcoes": {
+      "A": "CSMA/CD",
+      "B": "CSMA/CA",
+      "C": "Token Passing",
+      "D": "TDM"
+    },
+    "correta": "B",
+    "comentario": "Wi-Fi usa CSMA/CA (Collision Avoidance - Prevenção). Ethernet com fio usa CSMA/CD (Collision Detection - Detecção).",
+    "id": 1773327821872
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "Em redes WAN, a tecnologia MPLS (Multiprotocol Label Switching) melhora a eficiência do roteamento ao:",
+    "opcoes": {
+      "A": "Criptografar todo o payload utilizando AES-256.",
+      "B": "Comutar os pacotes baseando-se em pequenos rótulos (labels) em vez de realizar consultas complexas à tabela de roteamento IP a cada salto.",
+      "C": "Substituir cabos de fibra óptica por túneis de rádio frequência.",
+      "D": "Converter pacotes IPv4 em IPv6 em tempo real."
+    },
+    "correta": "B",
+    "comentario": "O MPLS insere um rótulo entre a camada 2 e a 3 (sendo chamado de protocolo de camada 2.5). Os roteadores no núcleo da rede comutam os pacotes lendo apenas esse rótulo de forma muito mais rápida.",
+    "id": 1773327821527
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "O FDDI (Fiber Distributed Data Interface) é uma tecnologia LAN/MAN antiga baseada em fibra óptica que se destacava por sua alta confiabilidade devido ao uso de:",
+    "opcoes": {
+      "A": "Criptografia assimétrica em hardware.",
+      "B": "Topologia em estrela centralizada em um roteador core.",
+      "C": "Topologia de anel duplo e rotativo em direções opostas (Dual Ring).",
+      "D": "Conexões em malha completa (Full Mesh) entre todos os hosts."
+    },
+    "correta": "C",
+    "comentario": "O FDDI utiliza dois anéis. Se o anel principal romper, as estações vizinhas à falha 'dobram' o anel conectando-se ao anel secundário, isolando a falha e mantendo a rede operante.",
+    "id": 1773327819704
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "No protocolo ponto-a-ponto (PPP), amplamente utilizado em conexões WAN dial-up e banda larga (PPPoE), quais protocolos são utilizados nativamente para autenticação segura do usuário?",
+    "opcoes": {
+      "A": "IPsec e SSL",
+      "B": "PAP e CHAP",
+      "C": "Kerberos e NTLM",
+      "D": "WEP e WPA"
+    },
+    "correta": "B",
+    "comentario": "O PPP oferece autenticação através do PAP (senha enviada em texto claro, obsoleto) ou do CHAP (baseado em desafio/resposta e hash criptográfico, mais seguro).",
+    "id": 1773327824016
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "Qual a principal diferença no comportamento de tratamento de quadros entre um Hub e um Switch?",
+    "opcoes": {
+      "A": "Ambos atuam na camada 3, mas o Switch roteia IP.",
+      "B": "O Hub recebe um sinal e o transmite para todas as portas (broadcast de hardware), enquanto o Switch lê o endereço MAC de destino e encaminha o quadro apenas para a porta correta.",
+      "C": "O Hub divide o domínio de colisão, o Switch os une.",
+      "D": "O Switch requer configuração de endereçamento IPv6 para atuar em rede local."
+    },
+    "correta": "B",
+    "comentario": "O Hub é 'burro' (L1 - atua como repetidor). O Switch é inteligente (L2), cria uma tabela MAC e isola os domínios de colisão para cada porta.",
+    "id": 1773327821880
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "Qual equipamento ativo de rede opera na Camada 3 (Rede) e é utilizado para interligar redes lógicas diferentes, segmentando domínios de broadcast?",
+    "opcoes": {
+      "A": "Switch Layer 2",
+      "B": "Repetidor",
+      "C": "Roteador (Router)",
+      "D": "Patch Panel"
+    },
+    "correta": "C",
+    "comentario": "O roteador separa redes (sub-redes). Um pacote de broadcast gerado em uma rede não atravessa o roteador para a outra rede por padrão.",
+    "id": 1773327824651
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "No modelo de gerenciamento de redes, o protocolo SNMP baseia-se em um gerente (manager) que coleta informações dos agentes. Qual componente atua como um 'banco de dados' hierárquico estruturado que define quais variáveis podem ser lidas ou alteradas no agente?",
+    "opcoes": {
+      "A": "OID",
+      "B": "SMI",
+      "C": "MIB (Management Information Base)",
+      "D": "Trap"
+    },
+    "correta": "C",
+    "comentario": "A MIB é a estrutura lógica de objetos gerenciados. O SNMP Manager consulta a MIB do equipamento para entender quais métricas ele pode monitorar (ex: uso de CPU, status das interfaces).",
+    "id": 1773327820380
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "Em arquiteturas de sistemas, a topologia 'Ponto-a-Ponto' (Peer-to-Peer / P2P) difere da arquitetura Cliente/Servidor porque:",
+    "opcoes": {
+      "A": "No P2P todos os nós possuem as mesmas capacidades e responsabilidades, atuando simultaneamente como clientes e servidores.",
+      "B": "No P2P existe um servidor central de altíssimo desempenho controlando todos os clientes.",
+      "C": "O modelo Cliente/Servidor é impossível de ser escalado verticalmente.",
+      "D": "Redes P2P só funcionam sobre conexões Bluetooth."
+    },
+    "correta": "A",
+    "comentario": "Na P2P, os recursos são distribuídos e não há um nó central obrigatório de controle. No Cliente/Servidor, o cliente consome e o servidor provê serviços.",
+    "id": 1773327825340
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "Conceitualmente, qual é a diferença entre uma Intranet e a Internet?",
+    "opcoes": {
+      "A": "A Intranet utiliza cabos seriais privados, a Internet usa fibra.",
+      "B": "A Intranet não utiliza o protocolo TCP/IP, utilizando protocolos proprietários fechados.",
+      "C": "A Intranet baseia-se nas exatas mesmas tecnologias e protocolos da Internet (TCP/IP, HTTP), porém é uma rede corporativa fechada, de acesso restrito aos funcionários da organização.",
+      "D": "A Internet é controlada por uma única entidade governamental, a Intranet é descentralizada."
+    },
+    "correta": "C",
+    "comentario": "A tecnologia é a mesma (Web, E-mail, IP). A diferença é o escopo de acesso: a Internet é pública, a Intranet é privada.",
+    "id": 1773327818229
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "O protocolo RIP (Routing Information Protocol) é classificado como um protocolo de roteamento de vetor de distância. Qual é a métrica exclusiva que ele utiliza para determinar o melhor caminho?",
+    "opcoes": {
+      "A": "Largura de Banda (Bandwidth)",
+      "B": "Atraso (Delay)",
+      "C": "Contagem de saltos (Hop count), com um limite máximo de 15 saltos.",
+      "D": "Custo da rota baseado na velocidade do link em Kbps."
+    },
+    "correta": "C",
+    "comentario": "O RIP conta os roteadores pelo caminho. O caminho com menos saltos é escolhido, não importando se é uma linha rápida de 1Gbps ou lenta de 10Mbps. O 16º salto é considerado 'inalcançável'.",
+    "id": 1773327825500
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "Diferente do RIP, o protocolo OSPF (Open Shortest Path First) é um protocolo de roteamento 'Link-State' (estado de enlace). Qual algoritmo ele utiliza para calcular o caminho mais curto na topologia da rede?",
+    "opcoes": {
+      "A": "Algoritmo de Bellman-Ford",
+      "B": "Algoritmo de Dijkstra (Shortest Path First)",
+      "C": "Algoritmo de Diffie-Hellman",
+      "D": "Algoritmo de Huffman"
+    },
+    "correta": "B",
+    "comentario": "O OSPF enxerga a rede como um mapa completo e aplica o algoritmo de Dijkstra (SPF) baseando-se no custo (largura de banda) dos links para calcular as rotas mais eficientes.",
+    "id": 1773327825682
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "Qual é o protocolo de roteamento externo (Exterior Gateway Protocol) utilizado para interligar as diferentes operadoras e trocar rotas de Sistemas Autônomos (AS), formando o backbone central da Internet global?",
+    "opcoes": {
+      "A": "OSPF",
+      "B": "EIGRP",
+      "C": "IS-IS",
+      "D": "BGP (Border Gateway Protocol)"
+    },
+    "correta": "D",
+    "comentario": "RIP e OSPF são IGPs (Internos ao AS). O BGP é um protocolo de Path Vector utilizado na borda para decidir por qual operadora/AS o tráfego deve fluir na internet global.",
+    "id": 1773327826759
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "Em cabeamento estruturado (Norma ANSI/TIA-568), o Cabeamento Horizontal (Horizontal Cabling) é responsável por interligar quais pontos?",
+    "opcoes": {
+      "A": "A tomada de telecomunicações na área de trabalho do usuário final (Work Area) até o armário de telecomunicações (Patch Panel/TR) daquele andar.",
+      "B": "Diferentes armários de telecomunicações de andares distintos (interligação vertical).",
+      "C": "A entrada geral do edifício (Entrance Facility) até o provedor de internet externo.",
+      "D": "Apenas as conexões curtas de 2 metros entre o computador e a tomada da parede."
+    },
+    "correta": "A",
+    "comentario": "O cabeamento horizontal distribui a rede pelo andar (do armário até o usuário). A interligação entre andares e salas de equipamentos é chamada de Cabeamento de Backbone.",
+    "id": 1773327817646
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "No protocolo Frame Relay (WAN), o tráfego ocorre por meio de comutação de pacotes e circuitos virtuais. Como são identificados os endereços locais das conexões dentro do switch Frame Relay?",
+    "opcoes": {
+      "A": "Endereços MAC de 48 bits",
+      "B": "Endereços IP públicos",
+      "C": "DLCI (Data-Link Connection Identifier)",
+      "D": "Tags MPLS"
+    },
+    "correta": "C",
+    "comentario": "O DLCI é um valor numérico que identifica unicamente o canal do circuito virtual entre o roteador do cliente (DTE) e o switch da operadora (DCE).",
+    "id": 1773327817808
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "Qual utilitário TCP/IP exibe o caminho (número de saltos/roteadores e latência) que um pacote percorre desde a origem até o destino, utilizando intencionalmente o campo TTL (Time to Live) do cabeçalho IP?",
+    "opcoes": {
+      "A": "ipconfig / ifconfig",
+      "B": "netstat",
+      "C": "nslookup",
+      "D": "traceroute (ou tracert no Windows)"
+    },
+    "correta": "D",
+    "comentario": "O traceroute envia pacotes com o TTL baixo e vai incrementando a cada rodada. Quando um roteador descarta o pacote (TTL=0), ele avisa a origem, revelando sua posição no caminho.",
+    "id": 1773327827516
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "No protocolo TCP (Transmission Control Protocol), qual mecanismo é usado para garantir a Confiabilidade e a Ordenação da entrega dos pacotes?",
+    "opcoes": {
+      "A": "Janela Deslizante (Sliding Window)",
+      "B": "Números de Sequência e Mensagens de Confirmação (ACK)",
+      "C": "Algoritmo de Roteamento Dijkstra",
+      "D": "Resolução de Nomes de Domínio"
+    },
+    "correta": "B",
+    "comentario": "Cada byte enviado tem um número de sequência. O destinatário envia um ACK para o remetente confirmando o recebimento; caso não chegue, o pacote é retransmitido.",
+    "id": 1773327819473
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "Em redes Ethernet locais (Padrão 802.3), qual mecanismo é utilizado para segmentar de forma lógica (via software) uma mesma rede física em redes virtualmente separadas nos Switches?",
+    "opcoes": {
+      "A": "NAT (Network Address Translation)",
+      "B": "VLAN (Virtual LAN) utilizando o padrão 802.1Q",
+      "C": "VPN com IPsec",
+      "D": "Subnetting de classe A"
+    },
+    "correta": "B",
+    "comentario": "VLANs inserem marcações lógicas (tags) nos quadros (802.1Q), separando o tráfego em domínios de broadcast independentes, mesmo usando o mesmo switch físico.",
+    "id": 1773327821219
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "Qual técnica do IPv4 é utilizada em roteadores de borda para contornar a escassez de IPs globais, traduzindo um IP de rede privada local em um IP público roteável para a internet?",
+    "opcoes": {
+      "A": "DHCP",
+      "B": "DNS",
+      "C": "NAT (Network Address Translation)",
+      "D": "ARP"
+    },
+    "correta": "C",
+    "comentario": "O NAT mascara a rede privada interna (IPs não roteáveis). Quando um pacote sai para a internet, o roteador substitui o IP de origem privado pelo seu IP público global.",
+    "id": 1773327826346
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "No contexto da arquitetura cliente/servidor e aplicações TCP/IP, as portas de rede (Layer 4) permitem o funcionamento simultâneo de serviços. As portas conhecidas para os serviços HTTP, HTTPS e SSH são, respectivamente:",
+    "opcoes": {
+      "A": "80, 443 e 22",
+      "B": "21, 23 e 80",
+      "C": "25, 110 e 443",
+      "D": "8080, 53 e 22"
+    },
+    "correta": "A",
+    "comentario": "Por padrão internacional (IANA), HTTP = porta TCP 80; HTTPS = porta TCP 443; e SSH = porta TCP 22.",
+    "id": 1773327819414
+  },
+  {
+    "materia": "5. Redes de computadores e comunicação de dados",
+    "pergunta": "O IPv6 traz melhorias de segurança nativas, hierarquia simplificada de roteamento e um cabeçalho mais eficiente. Uma novidade no IPv6 é a remoção das mensagens de Broadcast tradicionais em favor de:",
+    "opcoes": {
+      "A": "Unicast reverso.",
+      "B": "Multicast amplo e Anycast.",
+      "C": "Tokens de difusão de hardware.",
+      "D": "Roteamento híbrido BGP."
+    },
+    "correta": "B",
+    "comentario": "No IPv6 não há endereço de broadcast genérico como no IPv4. Funções que precisavam de broadcast agora usam endereços de Multicast específicos (envio para grupos) para economizar banda, e Anycast (envio para o mais próximo).",
+    "id": 1773327820834
+  },
+  {
+    "materia": "6. Criptografia e segurança de redes",
+    "pergunta": "Qual é a principal característica da criptografia simétrica em relação ao gerenciamento de chaves?",
+    "opcoes": {
+      "A": "Utiliza um par de chaves: uma pública para cifrar e uma privada para decifrar.",
+      "B": "A mesma chave secreta é utilizada tanto para cifrar quanto para decifrar os dados, exigindo um canal seguro para sua distribuição prévia.",
+      "C": "Não utiliza chaves, baseando-se apenas em algoritmos de hash irreversíveis.",
+      "D": "Gera uma nova chave pública a cada transação de rede."
+    },
+    "correta": "B",
+    "comentario": "Na criptografia simétrica (ex: AES, DES), emissor e receptor compartilham a mesma chave. É muito rápida, mas o grande desafio é distribuir essa chave com segurança.",
+    "id": 1773327930612
+  },
+  {
+    "materia": "6. Criptografia e segurança de redes",
+    "pergunta": "Na criptografia assimétrica, se Alice deseja enviar uma mensagem confidencial para Bob garantindo que apenas ele possa ler, qual chave Alice deve usar para cifrar a mensagem?",
+    "opcoes": {
+      "A": "A chave privada de Alice.",
+      "B": "A chave privada de Bob.",
+      "C": "A chave pública de Bob.",
+      "D": "A chave pública de Alice."
+    },
+    "correta": "C",
+    "comentario": "Para garantir a confidencialidade, a mensagem deve ser cifrada com a chave PÚBLICA do destinatário (Bob). Assim, somente a chave PRIVADA do destinatário poderá decifrá-la.",
+    "id": 1773327933963
+  },
+  {
+    "materia": "6. Criptografia e segurança de redes",
+    "pergunta": "Qual pilar da segurança da informação a Assinatura Digital NÃO garante nativamente?",
+    "opcoes": {
+      "A": "Autenticidade",
+      "B": "Integridade",
+      "C": "Não-repúdio (Irretratabilidade)",
+      "D": "Confidencialidade"
+    },
+    "correta": "D",
+    "comentario": "A assinatura digital prova quem enviou (autenticidade), garante que o arquivo não foi alterado (integridade) e impede o autor de negar a autoria (não-repúdio). Ela não oculta o conteúdo da mensagem (confidencialidade).",
+    "id": 1773327930100
+  },
+  {
+    "materia": "6. Criptografia e segurança de redes",
+    "pergunta": "Como é gerada tecnicamente uma Assinatura Digital padrão em um documento?",
+    "opcoes": {
+      "A": "Cifrando o documento inteiro com a chave pública do destinatário.",
+      "B": "Calculando o hash do documento e cifrando esse hash com a chave privada do emissor.",
+      "C": "Anexando a senha de rede do usuário no final do arquivo PDF.",
+      "D": "Cifrando o documento com o algoritmo simétrico AES-256."
+    },
+    "correta": "B",
+    "comentario": "O emissor gera o resumo criptográfico (hash) do documento e o cifra com sua própria chave privada. O destinatário usa a chave pública do emissor para decifrar o hash e conferir a integridade.",
+    "id": 1773327937353
+  },
+  {
+    "materia": "6. Criptografia e segurança de redes",
+    "pergunta": "O que é um Certificado Digital (padrão X.509)?",
+    "opcoes": {
+      "A": "Um software antivírus que roda em servidores web.",
+      "B": "Um token físico tipo pen-drive usado para guardar senhas de e-mail.",
+      "C": "Um documento eletrônico assinado por uma Autoridade Certificadora (AC) que vincula uma chave pública à identidade de uma pessoa, empresa ou site.",
+      "D": "Um protocolo de roteamento seguro para VPNs."
+    },
+    "correta": "C",
+    "comentario": "O certificado digital atua como uma 'identidade virtual'. Ele atesta que uma determinada chave pública realmente pertence àquela entidade, com a garantia de uma AC confiável.",
+    "id": 1773327935535
+  },
+  {
+    "materia": "6. Criptografia e segurança de redes",
+    "pergunta": "Dentro da Infraestrutura de Chaves Públicas (PKI/ICP), qual é a função específica da Autoridade de Registro (AR)?",
+    "opcoes": {
+      "A": "Gerar e assinar criptograficamente o certificado digital final.",
+      "B": "Revogar os certificados comprometidos na lista CRL.",
+      "C": "Receber as solicitações, identificar presencialmente ou remotamente o usuário e validar seus documentos antes de autorizar a emissão do certificado.",
+      "D": "Atuar como um firewall bloqueando certificados falsos."
+    },
+    "correta": "C",
+    "comentario": "A Autoridade de Registro (AR) faz o atendimento e a triagem documental. Ela verifica quem você é e repassa o pedido validado para a Autoridade Certificadora (AC), que é quem efetivamente emite o certificado.",
+    "id": 1773327935120
+  },
+  {
+    "materia": "6. Criptografia e segurança de redes",
+    "pergunta": "Qual recurso é utilizado por uma Infraestrutura de Chaves Públicas (PKI) para informar aos clientes que um certificado digital, mesmo antes da data de expiração, não é mais confiável (ex: chave privada roubada)?",
+    "opcoes": {
+      "A": "Lista de Revogação de Certificados (LRC/CRL) ou protocolo OCSP.",
+      "B": "DNSSEC (Domain Name System Security Extensions).",
+      "C": "Firewall de Aplicação Web (WAF).",
+      "D": "Tabela de NAT Dinâmico."
+    },
+    "correta": "A",
+    "comentario": "A CRL (Certificate Revocation List) é uma lista negra pública de certificados revogados mantida pela AC. O OCSP é o protocolo online usado para consultar o status de um certificado em tempo real.",
+    "id": 1773327937024
+  },
+  {
+    "materia": "6. Criptografia e segurança de redes",
+    "pergunta": "Os protocolos SSL e seu sucessor TLS utilizam a criptografia de forma híbrida para garantir a segurança de protocolos como o HTTPS. Como isso funciona?",
+    "opcoes": {
+      "A": "Usam criptografia assimétrica durante toda a sessão para garantir velocidade máxima.",
+      "B": "Usam criptografia simétrica para tudo, dispensando o uso de certificados digitais.",
+      "C": "Usam criptografia assimétrica no aperto de mãos (handshake) para autenticar o servidor e trocar uma chave de sessão. Depois, usam essa chave simétrica para cifrar o tráfego de dados.",
+      "D": "Usam apenas algoritmos de hash irreversíveis para ofuscar o tráfego web."
+    },
+    "correta": "C",
+    "comentario": "A criptografia assimétrica (lenta) resolve o problema da troca segura de chaves iniciais. Uma vez estabelecida a conexão, a comunicação passa a usar criptografia simétrica (rápida) para transferir os arquivos/dados.",
+    "id": 1773327929350
+  },
+  {
+    "materia": "6. Criptografia e segurança de redes",
+    "pergunta": "Em termos de filtragem de pacotes, qual a principal diferença entre um Firewall Stateless (sem estado) e um Firewall Stateful (de inspeção de estado)?",
+    "opcoes": {
+      "A": "O Stateless atua na camada 7 (Aplicação), enquanto o Stateful atua na camada 2 (Enlace).",
+      "B": "O Stateful acompanha e guarda na memória o contexto (estado) das conexões ativas, liberando automaticamente o tráfego de retorno das conexões iniciadas internamente. O Stateless avalia cada pacote isoladamente.",
+      "C": "O Stateless bloqueia vírus, enquanto o Stateful atua apenas como roteador.",
+      "D": "Firewalls Stateful não suportam regras baseadas em IP ou porta."
+    },
+    "correta": "B",
+    "comentario": "O firewall de estado (Stateful) é mais inteligente. Se você solicita uma página web (saída), ele anota a conexão na tabela de estado e permite automaticamente que a resposta do servidor web entre na sua rede.",
+    "id": 1773327936481
+  },
+  {
+    "materia": "6. Criptografia e segurança de redes",
+    "pergunta": "Qual técnica, frequentemente implementada em firewalls ou roteadores de borda, converte múltiplos endereços IPs privados de uma rede local para um único endereço IP público válido na Internet, diferenciando as conexões pelas portas TCP/UDP?",
+    "opcoes": {
+      "A": "Proxy Reverso",
+      "B": "VLAN Trunking",
+      "C": "NAT Overload (PAT - Port Address Translation)",
+      "D": "Spanning Tree Protocol (STP)"
+    },
+    "correta": "C",
+    "comentario": "O PAT (Port Address Translation), também conhecido como NAT Overload ou NAT muitos-para-um, mapeia vários IPs internos privados para um único IP público usando diferentes portas de origem para gerenciar o tráfego.",
+    "id": 1773327938341
+  },
+  {
+    "materia": "6. Criptografia e segurança de redes",
+    "pergunta": "Em uma arquitetura corporativa, qual a função clássica de um Servidor Proxy de encaminhamento (Forward Proxy)?",
+    "opcoes": {
+      "A": "Criptografar todo o disco rígido dos computadores locais.",
+      "B": "Atuar como intermediário entre as requisições dos clientes internos e a Internet, permitindo fazer cache de páginas, aplicar filtros de conteúdo e auditar o acesso à web.",
+      "C": "Publicar um servidor web interno para a Internet mascarando seu endereço IP real.",
+      "D": "Substituir fisicamente o switch principal da rede LAN."
+    },
+    "correta": "B",
+    "comentario": "O Forward Proxy fica entre a LAN e a Internet. Ele recebe os pedidos web dos funcionários, busca na internet (ou no próprio cache) e devolve ao usuário, centralizando o controle de acesso e bloqueando sites indevidos.",
+    "id": 1773327935650
+  },
+  {
+    "materia": "6. Criptografia e segurança de redes",
+    "pergunta": "Diferente do proxy tradicional, o que faz um Proxy Reverso (Reverse Proxy)?",
+    "opcoes": {
+      "A": "Desvia o tráfego da internet para as máquinas dos usuários finais.",
+      "B": "Fica posicionado em frente aos servidores web internos da empresa, recebendo as requisições vindas da Internet e distribuindo-as (balanceamento de carga), além de ocultar a topologia real dos servidores internos.",
+      "C": "Reverte a criptografia de arquivos infectados por ransomware.",
+      "D": "Impede o uso de VPNs pelos funcionários em home office."
+    },
+    "correta": "B",
+    "comentario": "O Proxy Reverso protege os SERVIDORES corporativos. O cliente na internet acha que está falando diretamente com o servidor web, mas na verdade está falando com o proxy reverso, que gerencia a carga e as proteções SSL.",
+    "id": 1773327936582
+  },
+  {
+    "materia": "6. Criptografia e segurança de redes",
+    "pergunta": "As VPNs (Redes Privadas Virtuais) operam majoritariamente sobre dois protocolos principais no mercado atual. Um foca na camada de rede ligando filiais (site-to-site) e o outro atua na camada de transporte/aplicação focando em usuários remotos (client-to-site). Quais são eles?",
+    "opcoes": {
+      "A": "SMTP e POP3",
+      "B": "IPsec e SSL/TLS (OpenVPN)",
+      "C": "GRE e L2TP (sem criptografia)",
+      "D": "BGP e OSPF"
+    },
+    "correta": "B",
+    "comentario": "O IPsec é o padrão ouro para ligar duas redes inteiras de forma transparente. VPNs baseadas em SSL/TLS (como OpenVPN e AnyConnect) são extremamente populares para funcionários em home office por passarem facilmente em firewalls natters.",
+    "id": 1773327931462
+  },
+  {
+    "materia": "6. Criptografia e segurança de redes",
+    "pergunta": "No estabelecimento de uma VPN IPsec, qual protocolo do framework IPsec é responsável por prover Criptografia (confidencialidade) ao conteúdo do pacote IP?",
+    "opcoes": {
+      "A": "AH (Authentication Header)",
+      "B": "IKE (Internet Key Exchange)",
+      "C": "ESP (Encapsulating Security Payload)",
+      "D": "L2TP"
+    },
+    "correta": "C",
+    "comentario": "No IPsec, o AH garante apenas integridade e autenticação. É o ESP que cifra os dados (payload), garantindo a confidencialidade da informação trafegada no túnel.",
+    "id": 1773327936881
+  },
+  {
+    "materia": "6. Criptografia e segurança de redes",
+    "pergunta": "Durante um ataque de 'Homem no Meio' (Man-in-the-Middle - MitM), o invasor intercepta a comunicação. Qual tecnologia de rede previne adequadamente esse tipo de ataque ao validar a identidade do servidor para o cliente antes da troca de dados?",
+    "opcoes": {
+      "A": "Hubs de camada 1.",
+      "B": "NAT estático.",
+      "C": "Protocolo TLS amparado por Certificados Digitais emitidos por uma AC confiável.",
+      "D": "ICMP Echo Request (Ping)."
+    },
+    "correta": "C",
+    "comentario": "O uso de TLS/HTTPS com certificados digitais garante que o cliente (navegador) verifique a assinatura da Autoridade Certificadora, garantindo que ele está falando com o servidor legítimo e não com um impostor na rede.",
+    "id": 1773327936331
+  },
+  {
+    "materia": "6. Criptografia e segurança de redes",
+    "pergunta": "Qual algoritmo abaixo é o padrão mais forte, atual e recomendado pelo NIST para criptografia SIMÉTRICA (utilizado em discos rígidos, Wi-Fi WPA3 e túneis VPN)?",
+    "opcoes": {
+      "A": "DES (Data Encryption Standard)",
+      "B": "RC4",
+      "C": "RSA (Rivest-Shamir-Adleman)",
+      "D": "AES (Advanced Encryption Standard)"
+    },
+    "correta": "D",
+    "comentario": "O AES substituiu o DES e 3DES. É um algoritmo simétrico de blocos ultrasseguro (suporta chaves de 128, 192 ou 256 bits). O RSA é um algoritmo assimétrico (chaves pública/privada).",
+    "id": 1773327933716
+  },
+  {
+    "materia": "6. Criptografia e segurança de redes",
+    "pergunta": "O Firewall NGFW (Next-Generation Firewall) e UTM (Unified Threat Management) diferem do firewall de inspeção de estado tradicional por incluir nativamente recursos como:",
+    "opcoes": {
+      "A": "Capacidade exclusiva de atuar como Hub, refletindo sinais elétricos.",
+      "B": "Apenas filtragem baseada em endereços MAC.",
+      "C": "Inspeção Profunda de Pacotes (DPI), controle de aplicações, antivírus de borda e IPS (Sistema de Prevenção de Intrusão).",
+      "D": "Descarte automático de pacotes IPv6."
+    },
+    "correta": "C",
+    "comentario": "Firewalls de próxima geração (NGFW) não olham apenas para IP e porta (L3/L4). Eles olham para o conteúdo do pacote (L7), identificando malwares e bloqueando aplicativos específicos (ex: bloquear o chat do Facebook mas liberar o feed).",
+    "id": 1773327937869
+  },
+  {
+    "materia": "6. Criptografia e segurança de redes",
+    "pergunta": "Uma Zona Desmilitarizada (DMZ) é uma estratégia clássica de arquitetura de redes seguras. Qual é a sua principal finalidade?",
+    "opcoes": {
+      "A": "Criar uma sub-rede contendo servidores que precisam ser acessados pela Internet externa (como servidores web/email), isolando-os da rede local corporativa interna (LAN).",
+      "B": "Bloquear 100% do tráfego TCP na empresa.",
+      "C": "Hospedar o banco de dados principal de folha de pagamento longe dos firewalls.",
+      "D": "Substituir o uso de NAT na LAN."
+    },
+    "correta": "A",
+    "comentario": "A DMZ fica 'espremida' no firewall entre a LAN (confiável) e a Internet (não confiável). Se um servidor web na DMZ for invadido, a segmentação impede que o invasor avance para as máquinas internas da LAN corporativa.",
+    "id": 1773327935606
+  },
+  {
+    "materia": "6. Criptografia e segurança de redes",
+    "pergunta": "Na matemática da criptografia assimétrica baseada em curvas elípticas (ECC) e RSA, o cálculo garante que uma mensagem cifrada com a chave pública de um usuário só possa ser recuperada:",
+    "opcoes": {
+      "A": "Usando a mesma chave pública utilizada para cifrar.",
+      "B": "Usando a chave privada matematicamente correspondente ao par pertencente a esse mesmo usuário.",
+      "C": "Usando a chave privada de quem enviou a mensagem.",
+      "D": "Usando qualquer chave de uma Autoridade Certificadora superior."
+    },
+    "correta": "B",
+    "comentario": "O par de chaves possui uma ligação matemática unidirecional. O que uma chave do par 'tranca' (cifra), SOMENTE a outra chave do mesmo par consegue 'destrancar' (decifrar).",
+    "id": 1773327931930
+  },
+  {
+    "materia": "6. Criptografia e segurança de redes",
+    "pergunta": "Sobre a técnica de NAT Dinâmico (Network Address Translation Dinâmico), assinale a afirmativa correta:",
+    "opcoes": {
+      "A": "Mapeia sempre um IP privado para o exato mesmo IP público de forma permanente.",
+      "B": "Utiliza um único IP público e altera as portas de todas as conexões (Overload/PAT).",
+      "C": "Mapeia um IP privado para um IP público escolhido aleatoriamente a partir de um pool (lote) de IPs públicos válidos disponíveis no momento da conexão.",
+      "D": "Traduz endereços IPv4 em endereços MAC para uso em redes Wi-Fi."
+    },
+    "correta": "C",
+    "comentario": "No NAT Dinâmico, a empresa possui um lote (pool) de IPs públicos. Quando um computador interno acessa a web, ele 'pega emprestado' um desses IPs públicos. Quando finaliza a conexão, o IP volta para o pool. O NAT Estático é 1 para 1 fixo, e o PAT é muitos para 1.",
+    "id": 1773327935291
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Os três pilares fundamentais da Segurança da Informação, conhecidos como Tríade CID, são:",
+    "opcoes": {
+      "A": "Confidencialidade, Integridade e Disponibilidade.",
+      "B": "Controle, Identificação e Disponibilidade.",
+      "C": "Criptografia, Integridade e Desempenho.",
+      "D": "Confidencialidade, Imutabilidade e Distribuição."
+    },
+    "correta": "A",
+    "comentario": "A Tríade CID garante que a informação seja acessada apenas por quem tem direito (Confidencialidade), não seja alterada indevidamente (Integridade) e esteja acessível quando necessária (Disponibilidade).",
+    "id": 1773329608623
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Na gestão de riscos de segurança, qual é a diferença técnica entre Vulnerabilidade e Ameaça?",
+    "opcoes": {
+      "A": "São sinônimos e representam ataques bem-sucedidos de hackers.",
+      "B": "Ameaça é uma fraqueza no sistema, enquanto a Vulnerabilidade é o agente externo que explora essa fraqueza.",
+      "C": "Vulnerabilidade é uma fraqueza (falha, brecha) no ativo. Ameaça é o agente ou evento (hacker, vírus, desastre) que pode explorar essa fraqueza para causar dano.",
+      "D": "A vulnerabilidade ocorre apenas no hardware, enquanto a ameaça ocorre apenas no software."
+    },
+    "correta": "C",
+    "comentario": "O Risco só existe quando uma Ameaça encontra uma Vulnerabilidade. Se o sistema tem uma falha (vulnerabilidade), mas não há quem a explore (ameaça), o risco é mitigado.",
+    "id": 1773329612552
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Qual pilar da segurança da informação, também conhecido como Irretratabilidade, garante que o autor de uma transação ou mensagem não possa negar posteriormente que a tenha criado ou enviado?",
+    "opcoes": {
+      "A": "Auditoria",
+      "B": "Não-repúdio",
+      "C": "Autenticidade",
+      "D": "Disponibilidade"
+    },
+    "correta": "B",
+    "comentario": "O Não-repúdio é alcançado tecnicamente através do uso de Assinaturas Digitais baseadas em chaves criptográficas assimétricas.",
+    "id": 1773329609738
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Qual é a diferença fundamental no comportamento de um Vírus e de um Worm?",
+    "opcoes": {
+      "A": "O vírus rouba senhas bancárias, enquanto o worm apenas apaga arquivos.",
+      "B": "O vírus precisa de um arquivo hospedeiro e da execução pelo usuário para se espalhar. O worm é autônomo, explorando vulnerabilidades de rede para se replicar sozinho de máquina em máquina.",
+      "C": "Worms afetam apenas o sistema operacional Linux, enquanto vírus focam no Windows.",
+      "D": "O vírus se espalha silenciosamente, enquanto o worm sempre exibe mensagens na tela do usuário."
+    },
+    "correta": "B",
+    "comentario": "O Worm (verme) não precisa se anexar a um .exe ou .docx. Ele varre a rede procurando portas abertas e vulnerabilidades para se copiar para o próximo computador automaticamente.",
+    "id": 1773329616829
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Como age um malware classificado como Cavalo de Troia (Trojan)?",
+    "opcoes": {
+      "A": "Ele infecta a memória RAM do computador e se replica para pendrives automaticamente.",
+      "B": "Ele se apresenta ao usuário como um programa útil e legítimo (um jogo, um utilitário), mas ao ser executado, realiza ações maliciosas ocultas (como abrir portas para invasores).",
+      "C": "Ele criptografa os arquivos do usuário e exige o pagamento de um resgate em criptomoedas.",
+      "D": "Ele intercepta pacotes TCP/IP na rede local para espionar a navegação."
+    },
+    "correta": "B",
+    "comentario": "O Trojan não se replica sozinho como um vírus ou worm. Ele depende da engenharia social para convencer o usuário a instalá-lo achando que é um software benigno.",
+    "id": 1773329607977
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "O Ransomware tornou-se uma das maiores ameaças corporativas globais. Qual é o seu modus operandi típico?",
+    "opcoes": {
+      "A": "Monitorar o teclado do usuário para roubar credenciais de banco.",
+      "B": "Derrubar servidores web através de ataques de negação de serviço (DDoS).",
+      "C": "Criptografar os dados do disco rígido da vítima e extorqui-la, exigindo um pagamento (geralmente em Bitcoin) para fornecer a chave de descriptografia.",
+      "D": "Utilizar a CPU da máquina infectada para enviar e-mails de spam."
+    },
+    "correta": "C",
+    "comentario": "Ransomware (Malware de Resgate) 'sequestra' os dados criptografando-os. A melhor defesa preventiva contra esse ataque são backups offline e isolados (air-gap), pois ferramentas antivírus falham em reverter a criptografia.",
+    "id": 1773329609966
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "O que diferencia a atuação de um Firewall de Rede tradicional (stateful) de um WAF (Web Application Firewall)?",
+    "opcoes": {
+      "A": "O Firewall de Rede atua até a camada 4 (IP/Porta), enquanto o WAF inspeciona profundamente a camada 7 (HTTP/HTTPS), bloqueando ataques específicos contra o código das aplicações web (como SQL Injection e XSS).",
+      "B": "O WAF protege apenas o servidor de banco de dados, o Firewall protege a saída de internet.",
+      "C": "O Firewall de rede é físico, enquanto o WAF é exclusivamente um software open-source instalado nos computadores dos usuários.",
+      "D": "Não há diferença prática, ambos usam a mesma tecnologia de roteamento."
+    },
+    "correta": "A",
+    "comentario": "O WAF entende o 'idioma' da web (HTTP). Ele sabe analisar se o texto digitado num formulário de login do site contém um código de ataque malicioso, algo que o firewall de rede comum (L3/L4) ignoraria.",
+    "id": 1773329614708
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Qual é a diferença conceitual e prática entre os dispositivos IDS (Intrusion Detection System) e IPS (Intrusion Prevention System)?",
+    "opcoes": {
+      "A": "O IDS bloqueia o tráfego malicioso automaticamente, enquanto o IPS apenas monitora.",
+      "B": "O IDS atua passivamente (monitora a rede, gera logs e envia alertas ao identificar padrões anômalos), enquanto o IPS atua ativamente (fica 'inline' na rede e bloqueia o tráfego suspeito antes de ele atingir o alvo).",
+      "C": "Ambos apenas monitoram, mas o IPS é voltado para e-mails e o IDS para tráfego web.",
+      "D": "O IDS usa assinaturas de vírus, enquanto o IPS atua apenas contra ataques DDoS."
+    },
+    "correta": "B",
+    "comentario": "Detection (IDS) = Passivo (apenas avisa). Prevention (IPS) = Ativo (avisa e dropa o pacote). Um IPS mal configurado pode causar problemas ao bloquear tráfego legítimo (Falso Positivo).",
+    "id": 1773329612884
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "No mercado de segurança cibernética, um equipamento classificado como UTM (Unified Threat Management) caracteriza-se por:",
+    "opcoes": {
+      "A": "Agrupar múltiplas funções de segurança num único appliance ou sistema (ex: Firewall, VPN, IPS, Antivírus de borda e Filtro Web), simplificando a gestão.",
+      "B": "Atuar exclusivamente como um servidor de banco de dados criptografado.",
+      "C": "Ser um software focado na limpeza de arquivos temporários do Windows.",
+      "D": "Fornecer internet via satélite para filiais remotas."
+    },
+    "correta": "A",
+    "comentario": "O UTM (Gerenciamento Unificado de Ameaças) foi o precursor do conceito de Next-Generation Firewall (NGFW), unindo várias 'caixas' de segurança em um único equipamento multifunção centralizado.",
+    "id": 1773329608776
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Em relação à criação de senhas seguras, a adoção de MFA (Múltiplos Fatores de Autenticação) aumenta drasticamente a segurança ao exigir a combinação de pelo menos duas categorias diferentes de fatores. Quais são as três categorias clássicas?",
+    "opcoes": {
+      "A": "Alfabeto maiúsculo, alfabeto minúsculo e caracteres especiais.",
+      "B": "O que você sabe (senha), O que você tem (token/celular) e O que você é (biometria).",
+      "C": "Certificado digital, smartcard e VPN.",
+      "D": "PIN numérico, padrão de desenho (swipe) e reconhecimento de voz."
+    },
+    "correta": "B",
+    "comentario": "Ter uma senha forte e complexa não adianta se ela vazar num banco de dados. O MFA garante que o hacker não consiga entrar só com a senha (o que ele Sabe), pois ele não terá o seu celular (o que você Tem) para validar o token OTP.",
+    "id": 1773329612364
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Em resposta e tratamento de incidentes (segundo padrões do NIST/SANS), após identificar e classificar que um incidente de segurança está ocorrendo, qual é a etapa imediatamente posterior?",
+    "opcoes": {
+      "A": "Erradicação: formatar imediatamente os servidores.",
+      "B": "Contenção: isolar a ameaça (ex: desconectar máquinas da rede) para impedir que o dano ou infecção se espalhe pelo ambiente.",
+      "C": "Lições aprendidas: documentar o que ocorreu.",
+      "D": "Recuperação: restaurar os backups de nuvem."
+    },
+    "correta": "B",
+    "comentario": "O ciclo clássico é: Preparação -> Identificação -> CONTENÇÃO (estancar o sangramento para não piorar) -> Erradicação (remover o malware) -> Recuperação (voltar ao normal) -> Lições Aprendidas.",
+    "id": 1773329608071
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "No monitoramento corporativo, o software Cacti é mundialmente conhecido e utilizado primordialmente para qual finalidade específica?",
+    "opcoes": {
+      "A": "Fazer varredura de vulnerabilidades em servidores Linux.",
+      "B": "Criar gráficos temporais de desempenho e uso de banda de rede de forma eficiente, baseando-se no protocolo SNMP e na ferramenta RRDTool (Round-Robin Database).",
+      "C": "Atuar como um firewall de banco de dados open-source.",
+      "D": "Auditar as políticas de permissão do Active Directory."
+    },
+    "correta": "B",
+    "comentario": "O Cacti é focado na visualização gráfica de séries temporais de desempenho de rede (gráficos de tráfego, CPU, uso de interfaces), sendo muito mais simples e focado do que o Zabbix.",
+    "id": 1773329611931
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "O Zabbix é uma plataforma de monitoramento corporativo robusta. Nele, qual é a função das 'Triggers' (Gatilhos)?",
+    "opcoes": {
+      "A": "São os agentes instalados no servidor do cliente para enviar dados.",
+      "B": "São funções matemáticas que avaliam os dados recolhidos (itens) em relação a um limite estabelecido, alterando o status para 'Problema' caso a condição seja atingida.",
+      "C": "São os alertas de e-mail disparados aos gestores de TI.",
+      "D": "São scripts que executam a formatação dos discos após falha grave."
+    },
+    "correta": "B",
+    "comentario": "O 'Item' coleta o dado bruto (ex: CPU = 95%). A 'Trigger' é a expressão lógica que avalia esse dado (ex: SE CPU > 90% por 5 min, então STATUS = Problema).",
+    "id": 1773329609315
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Ao configurar o Zabbix para monitorar servidores em uma filial muito distante ou com rede instável, qual componente nativo deve ser utilizado para centralizar a coleta dos dados nessa filial e enviá-los em lote ao Zabbix Server principal?",
+    "opcoes": {
+      "A": "Zabbix Agent Ativo",
+      "B": "Zabbix Web Frontend",
+      "C": "Zabbix Proxy",
+      "D": "Zabbix Java Gateway"
+    },
+    "correta": "C",
+    "comentario": "O Zabbix Proxy é projetado para monitoramento distribuído. Ele atua como um intermediário: recolhe dados dos equipamentos da filial localmente e transmite ao Server central, poupando largura de banda e garantindo entrega se a VPN cair.",
+    "id": 1773329612972
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "No monitoramento de ativos usando Zabbix, a diferença entre o agente (Zabbix Agent) trabalhar no modo 'Passivo' ou 'Ativo' é baseada em quem inicia a conexão. Como funciona o modo ATIVO?",
+    "opcoes": {
+      "A": "O Zabbix Server se conecta ao Agente para perguntar pelos dados.",
+      "B": "O Agente solicita a lista de itens que deve monitorar ao Server e, em seguida, empurra (envia periodicamente) os dados de desempenho para o Zabbix Server, aliviando o processamento da central.",
+      "C": "Ambos usam broadcast UDP simultaneamente para se acharem na rede.",
+      "D": "O modo ativo não usa agentes, mas sim ICMP ping."
+    },
+    "correta": "B",
+    "comentario": "No modo Passivo, o servidor tem que 'bater' na porta do agente toda hora (Polling). No modo Ativo, o próprio agente toma a iniciativa e joga os dados para o servidor (Trapping), ótimo para firewalls rigorosos ou grandes volumes.",
+    "id": 1773329611897
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Segundo a LGPD (Lei nº 13.709/2018), como é legalmente classificado um 'Dado Pessoal Sensível'?",
+    "opcoes": {
+      "A": "Qualquer informação financeira, como saldo em conta, score do Serasa e números de cartões de crédito.",
+      "B": "Qualquer senha criptografada ou token de acesso a sistemas corporativos.",
+      "C": "Dado sobre origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato, dado referente à saúde ou à vida sexual, dado genético ou biométrico vinculado a pessoa natural.",
+      "D": "Apenas o número do CPF e RG de um cidadão brasileiro nativo."
+    },
+    "correta": "C",
+    "comentario": "A LGPD trata dados financeiros, CPF e senhas como 'Dados Pessoais', e eles exigem proteção. Porém, o conceito jurídico estrito de dado SENSÍVEL (art. 5º) restringe-se a raça, religião, política, saúde, biometria e filiação sindical, exigindo regras de proteção muito mais rígidas (pois podem gerar discriminação).",
+    "id": 1773329607694
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Um dado anonimizado perde a possibilidade de associação direta ou indireta a um indivíduo, mediante o uso de meios técnicos razoáveis. A LGPD aplica-se aos dados anonimizados?",
+    "opcoes": {
+      "A": "Sim, a lei aplica-se integralmente com o mesmo rigor dos dados sensíveis.",
+      "B": "Não, a lei não se aplica aos dados anonimizados, a não ser que o processo de anonimização seja revertido.",
+      "C": "Aplica-se apenas em casos de transferência internacional de dados anonimizados.",
+      "D": "Aplica-se apenas se a empresa tiver mais de 500 funcionários."
+    },
+    "correta": "B",
+    "comentario": "Se o dado foi anonimizado de forma irreversível e não é mais possível descobrir a quem ele pertencia, ele deixa de ser um 'Dado Pessoal' para os fins da LGPD, escapando das restrições da lei.",
+    "id": 1773329609174
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "A LGPD define três figuras (agentes) no tratamento de dados. Quem é o Controlador, quem é o Operador e quem é o Encarregado (DPO)?",
+    "opcoes": {
+      "A": "Controlador toma as decisões; Operador realiza o tratamento em nome do Controlador; Encarregado é o canal de comunicação entre Controlador, Titulares e a ANPD.",
+      "B": "Controlador fiscaliza a empresa; Operador digita os dados; Encarregado arquiva os processos.",
+      "C": "Controlador é a autoridade máxima do governo; Operador é a empresa que foi contratada; Encarregado é o titular do dado.",
+      "D": "Todos eles são obrigatoriamente pessoas jurídicas sem fins lucrativos."
+    },
+    "correta": "A",
+    "comentario": "Controlador é a mente (quem manda e decide a finalidade do uso dos dados). Operador é os braços (quem processa ou armazena terceirizado, ex: AWS, provedor de e-mail). O Encarregado (Data Protection Officer) é o porta-voz do tema na empresa.",
+    "id": 1773329611615
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Muitos acreditam erroneamente que, sob a LGPD, uma empresa precisa sempre pedir permissão (Consentimento) para tratar os dados de alguém. Qual afirmação abaixo está tecnicamente alinhada à LGPD?",
+    "opcoes": {
+      "A": "O Consentimento verbal é a única forma de coletar dados no Brasil.",
+      "B": "O Consentimento é apenas UMA das 10 bases legais previstas pela LGPD (ex: cumprimento de obrigação legal, execução de contrato, proteção ao crédito, legítimo interesse).",
+      "C": "O Consentimento não existe na LGPD brasileira, apenas na lei europeia (GDPR).",
+      "D": "Para o setor público, o consentimento é sempre inexigível e proibido."
+    },
+    "correta": "B",
+    "comentario": "Se uma empresa precisa do seu CPF para emitir uma Nota Fiscal (cumprimento de obrigação legal ou regulatória), ela não precisa pedir o seu 'consentimento', pois há uma base legal superior exigindo o tratamento.",
+    "id": 1773329609790
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "O que a LGPD estabelece como regra geral a respeito do tratamento de dados pessoais de crianças e adolescentes?",
+    "opcoes": {
+      "A": "É proibido armazenar dados de menores de 18 anos na internet.",
+      "B": "É permitido apenas em caso de processos judiciais criminais.",
+      "C": "Deve ser realizado com o consentimento específico e em destaque dado por pelo menos um dos pais ou pelo responsável legal.",
+      "D": "O tratamento pode ocorrer livremente se o serviço online for voltado para jogos e entretenimento."
+    },
+    "correta": "C",
+    "comentario": "O art. 14 da LGPD exige o consentimento específico (nada de contratos genéricos ocultos) de um dos pais ou responsável legal, focando sempre no 'melhor interesse' da criança.",
+    "id": 1773329609149
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Como se chama o órgão federal responsável por zelar, implementar e fiscalizar o cumprimento da LGPD no Brasil, podendo inclusive aplicar as multas milionárias previstas na lei?",
+    "opcoes": {
+      "A": "Procon",
+      "B": "CGI.br (Comitê Gestor da Internet no Brasil)",
+      "C": "ANPD (Autoridade Nacional de Proteção de Dados)",
+      "D": "Polícia Federal - Divisão de Cibercrimes"
+    },
+    "correta": "C",
+    "comentario": "A ANPD é o órgão criado exclusivamente com a finalidade de regular o tema de proteção de dados, educar as empresas e aplicar as sanções administrativas (que podem chegar a 50 milhões de reais por infração).",
+    "id": 1773329611159
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Dentre os Direitos do Titular garantidos pela LGPD (Art. 18), estão incluídos:",
+    "opcoes": {
+      "A": "O direito de ser esquecido em processos de dívidas financeiras vencidas há menos de 5 anos.",
+      "B": "O direito à confirmação da existência de tratamento, acesso aos dados, correção de dados incompletos/inexatos e a portabilidade dos dados para outro fornecedor.",
+      "C": "O direito de transferir as multas da empresa para os auditores da ANPD.",
+      "D": "O direito de ocultar o nome no Diário Oficial da União caso passe em um concurso."
+    },
+    "correta": "B",
+    "comentario": "A LGPD empodera o cidadão. Você tem o direito de perguntar o que a empresa sabe sobre você, exigir correção, portar os dados e até pedir que sejam apagados (desde que a empresa não tenha uma obrigação legal de retê-los).",
+    "id": 1773329613922
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Na classificação de softwares maliciosos, o 'Rootkit' se diferencia dos demais porque a sua principal função é:",
+    "opcoes": {
+      "A": "Exibir propagandas agressivas (Adware).",
+      "B": "Ocultar a si mesmo e outras ameaças (como portas abertas e processos maliciosos) das ferramentas de monitoramento e antivírus do sistema operacional, atuando com privilégios de administrador (root).",
+      "C": "Capturar todas as teclas digitadas pelo usuário e enviar por e-mail.",
+      "D": "Inundar um servidor com pacotes UDP para causar lentidão."
+    },
+    "correta": "B",
+    "comentario": "O objetivo central do Rootkit é garantir a invisibilidade do atacante. Ele intercepta as chamadas do sistema operacional para esconder arquivos e processos maliciosos do administrador e do antivírus.",
+    "id": 1773329614029
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Qual das alternativas abaixo descreve perfeitamente o princípio da 'Finalidade' previsto na LGPD (Art. 6º, I)?",
+    "opcoes": {
+      "A": "A empresa deve excluir os dados assim que o usuário cancelar o contrato telefônico.",
+      "B": "Os dados pessoais coletados não podem ser usados para discriminação abusiva.",
+      "C": "A realização do tratamento deve ser feita para propósitos legítimos, específicos, explícitos e informados ao titular, sem possibilidade de tratamento posterior de forma incompatível com essas finalidades.",
+      "D": "Os dados devem estar acessíveis de forma gratuita ao governo em tempo real."
+    },
+    "correta": "C",
+    "comentario": "O princípio da Finalidade acaba com a coleta indiscriminada de dados 'só por garantia'. Se você coleta dados para entregar um produto na casa da pessoa (finalidade A), não pode vender essa base de dados para uma empresa de marketing (finalidade B incompatível) sem permissão.",
+    "id": 1773329608513
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Em caso de vazamento de dados que possa acarretar risco ou dano relevante aos titulares (um incidente de segurança grave), o que a empresa (Controlador) é obrigada a fazer segundo a LGPD?",
+    "opcoes": {
+      "A": "Avisar o Procon no prazo máximo de 180 dias.",
+      "B": "Comunicar à ANPD e aos titulares afetados em prazo razoável, descrevendo a natureza dos dados e as medidas tomadas para reverter o dano.",
+      "C": "Apagar os backups para impedir o rastreamento policial.",
+      "D": "Pagar a multa de ransomware imediatamente para silenciar o grupo hacker."
+    },
+    "correta": "B",
+    "comentario": "Houve um vazamento e CPFs/Senhas vazaram? A empresa não pode esconder debaixo do tapete. O artigo 48 da LGPD obriga a comunicação formal às autoridades (ANPD) e aos clientes prejudicados.",
+    "id": 1773329607841
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "O que é um RIPD (Relatório de Impacto à Proteção de Dados Pessoais) exigido pela LGPD?",
+    "opcoes": {
+      "A": "Uma planilha contendo o lucro anual gerado pela venda de banco de dados.",
+      "B": "Um manual técnico exclusivo para programadores aprenderem a usar criptografia RSA.",
+      "C": "Um documento que contém a descrição dos processos de tratamento de dados que podem gerar altos riscos à privacidade dos titulares, detalhando as medidas para mitigar esses riscos.",
+      "D": "Um atestado emitido pela Polícia Civil comprovando que a empresa não foi atacada."
+    },
+    "correta": "C",
+    "comentario": "O RIPD mapeia onde estão os dados perigosos (ex: dados sensíveis de milhares de pessoas) e prova por escrito para a ANPD que a empresa pensou nos riscos e instalou defesas adequadas.",
+    "id": 1773329608525
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Sobre a configuração do serviço de firewall Proxy transparente, qual das opções de segurança abaixo é a mais difícil de aplicar sem quebrar a criptografia (gerando erros de certificado para os clientes)?",
+    "opcoes": {
+      "A": "Bloqueio baseado em endereços IP de destino (Camada 3).",
+      "B": "Inspeção do tráfego TCP na porta 80 (HTTP convencional).",
+      "C": "Inspeção profunda de URLs completas e do conteúdo criptografado do tráfego HTTPS.",
+      "D": "Bloqueio do download de extensões .exe rodando via FTP."
+    },
+    "correta": "C",
+    "comentario": "O HTTPS protege o tráfego end-to-end. Para o proxy transparente conseguir ler a URL completa ou o conteúdo do HTTPS para filtrá-lo, ele precisaria fazer 'Man-in-the-Middle', quebrando o certificado original (SSL Bump), o que exige instalar o certificado raiz do Proxy em todos os computadores da empresa.",
+    "id": 1773329608716
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Para proteção de um servidor web Apache rodando em ambiente corporativo exposto à internet, o ModSecurity é a implementação mais famosa de qual tipo de dispositivo de segurança?",
+    "opcoes": {
+      "A": "IDS baseado em Rede (NIDS).",
+      "B": "WAF (Web Application Firewall) baseado em software.",
+      "C": "Antivírus heurístico residente.",
+      "D": "Servidor de chaves LDAP."
+    },
+    "correta": "B",
+    "comentario": "O ModSecurity é o WAF Open-source mais adotado do mundo. Ele é integrado como um módulo ao servidor Web (Apache, Nginx, IIS) para proteger em tempo real o código do site contra injeções SQL, XSS, etc.",
+    "id": 1773329611150
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Qual o significado da Pseudonimização perante a LGPD e a diferença prática para a Anonimização?",
+    "opcoes": {
+      "A": "Pseudonimização troca o nome do titular para o de seu representante legal permanentemente.",
+      "B": "Pseudonimização substitui a identidade por um código. Diferente da anonimização, a pseudonimização é REVERSÍVEL se o controlador utilizar uma chave/tabela adicional guardada em separado. Logo, o dado continua sujeito à LGPD.",
+      "C": "A Pseudonimização ocorre quando hackers falsificam identidades na internet (Phishing).",
+      "D": "Ambos significam a perda completa e definitiva da identificação, retirando os dados da alçada da lei."
+    },
+    "correta": "B",
+    "comentario": "Pseudonimizar é colocar uma 'máscara' (um ID) que pode ser retirada no futuro usando uma chave. O dado segue protegido pela LGPD. Anonimizar é triturar o dado para que ele nunca mais aponte para alguém (ex: estatísticas demográficas), saindo do escopo da lei.",
+    "id": 1773329616548
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Qual a finalidade de usar um Hash (Função de Resumo Criptográfico), como SHA-256, no tratamento e armazenamento de senhas corporativas?",
+    "opcoes": {
+      "A": "Permitir que o administrador decifre a senha do usuário em caso de perda.",
+      "B": "Garantir a disponibilidade da senha em nuvem.",
+      "C": "Proteger as senhas através da integridade irreversível (uma via). O sistema compara apenas os hashes calculados, não armazenando a senha em texto claro, impedindo roubo da base de dados.",
+      "D": "Acelerar o processo lógico de acesso remoto VPN."
+    },
+    "correta": "C",
+    "comentario": "Hashes são funções matemáticas de mão única. Diferente da criptografia, você não consegue 'des-hashear' a senha de volta. Isso garante que nem o administrador saiba a senha do usuário (embora ele possa resetá-la).",
+    "id": 1773329613866
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "No Zabbix, a descoberta automática de dispositivos em uma rede local para iniciar o monitoramento sem intervenção manual é feita através do recurso de:",
+    "opcoes": {
+      "A": "Auto Registration (Auto-registro) ou Network Discovery (Descoberta de rede).",
+      "B": "SNMP Trap Polling automático.",
+      "C": "DDoS reverso de pacotes UDP.",
+      "D": "Integração manual via banco SQL."
+    },
+    "correta": "A",
+    "comentario": "O Zabbix possui regras de Network Discovery (varrendo blocos IP) e Active Agent Auto Registration (quando a máquina é provisionada na nuvem, o agente sobe e avisa ao servidor para ser cadastrado automaticamente).",
+    "id": 1773329616057
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "O que é Engenharia Social no contexto das vulnerabilidades humanas em Segurança da Informação?",
+    "opcoes": {
+      "A": "O uso de softwares para quebrar senhas através de tentativas massivas combinadas com algoritmos de força bruta.",
+      "B": "A manipulação psicológica de pessoas para que executem ações involuntárias ou divulguem informações confidenciais (ex: phishing ou ligação telefônica forjada).",
+      "C": "O mapeamento arquitetural das conexões sociais feitas pelos servidores de banco de dados corporativos.",
+      "D": "A análise da estrutura do código-fonte de sistemas open-source por engenheiros experientes."
+    },
+    "correta": "B",
+    "comentario": "O elo mais fraco da segurança cibernética é o ser humano. Não adianta ter o melhor firewall do mundo se o funcionário clica em um e-mail de phishing e entrega sua senha ao atacante.",
+    "id": 1773329608920
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Como atua um ataque do tipo Negação de Serviço Distribuída (DDoS - Distributed Denial of Service)?",
+    "opcoes": {
+      "A": "Ele infecta as máquinas da empresa com ransomwares criptografados.",
+      "B": "Ele altera os registros DNS de um banco para direcionar usuários a sites falsos.",
+      "C": "Múltiplos computadores zumbis (Botnets) disparam simultaneamente uma quantidade massiva de requisições inúteis contra o servidor-alvo, esgotando seus recursos de banda ou CPU, tirando-o do ar.",
+      "D": "Ele apaga discretamente registros de logs do Firewall durante a madrugada."
+    },
+    "correta": "C",
+    "comentario": "No DDoS, o foco exclusivo do atacante é ferir o pilar da DISPONIBILIDADE do sistema. O tráfego falso é tão gigantesco que usuários legítimos não conseguem acessar o portal da empresa.",
+    "id": 1773329611766
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Sobre a transferência internacional de dados pessoais segundo a LGPD (Art. 33), como regra principal, ela só é permitida para:",
+    "opcoes": {
+      "A": "Servidores alocados em alto mar sem jurisdição oficial.",
+      "B": "Países membros do Mercosul, sob isenção de regras de fiscalização.",
+      "C": "Países ou organismos internacionais que proporcionem grau de proteção de dados pessoais adequado ao previsto na lei brasileira (ou mediante cláusulas contratuais de garantia aprovadas pela ANPD).",
+      "D": "Empresas com sede nos Estados Unidos exclusivamente."
+    },
+    "correta": "C",
+    "comentario": "Para evitar que dados brasileiros fujam das regras enviando-os para um servidor num país sem lei de proteção, a LGPD exige que o país de destino garanta o mesmo nível de segurança, ou que a empresa assuma formalmente em contrato a responsabilidade integral pelas normas brasileiras.",
+    "id": 1773329610180
+  },
+  {
+    "materia": "7. Segurança da informação",
+    "pergunta": "Em políticas corporativas, para proteger estações de trabalho ociosas de invasões físicas (um intruso no escritório usando o PC do funcionário que foi tomar café), a medida técnica mais eficiente associada ao bloqueio de tela é ativar:",
+    "opcoes": {
+      "A": "Criptografia assimétrica de disco via TPM.",
+      "B": "Protetor de tela ativado por tempo ocioso curto, exigindo obrigatoriamente a senha (autenticação de sistema operacional) para desbloqueio.",
+      "C": "Filtro de privacidade anti-reflexo no monitor LCD.",
+      "D": "Varredura contínua de antivírus no background via Active Directory."
+    },
+    "correta": "B",
+    "comentario": "Uma política de segurança de ponta básica, frequentemente gerida via GPO no Windows, força o computador a trancar a sessão após 'x' minutos de inatividade, barrando o acesso de estranhos no ambiente físico.",
+    "id": 1773329610332
   }
 ]
