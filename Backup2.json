@@ -855,5 +855,785 @@
     "correta": "B",
     "comentario": "O cache do Squid salva páginas, imagens e downloads recorrentes. Se outro usuário requisitar o mesmo conteúdo, o Squid o entrega da rede local instantaneamente, poupando a banda da WAN.",
     "id": 1773322994233
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "Qual é a principal diferença arquitetural e de acesso aos dados entre uma rede SAN (Storage Area Network) e um dispositivo NAS (Network Attached Storage)?",
+    "opcoes": {
+      "A": "O NAS provê acesso a dados em nível de bloco (block-level), enquanto a SAN provê acesso em nível de arquivo (file-level).",
+      "B": "A SAN utiliza exclusivamente discos SATA locais, enquanto o NAS utiliza matrizes em nuvem.",
+      "C": "A SAN provê acesso aos dados em nível de bloco (block-level) simulando discos locais para os servidores, enquanto o NAS provê acesso em nível de arquivo (file-level) atuando como um servidor de arquivos na rede.",
+      "D": "O NAS exige a instalação de placas HBA (Host Bus Adapters) de fibra óptica, enquanto a SAN usa portas Ethernet comuns."
+    },
+    "correta": "C",
+    "comentario": "A SAN entrega blocos brutos de armazenamento para o SO (formatados localmente pelo servidor). O NAS gerencia seu próprio sistema de arquivos e compartilha os dados via protocolos de rede (SMB/CIFS, NFS).",
+    "id": 1773324106233
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "O armazenamento do tipo DAS (Direct Attached Storage) caracteriza-se por:",
+    "opcoes": {
+      "A": "Ser conectado diretamente ao servidor ou estação de trabalho sem a intermediação de uma rede de armazenamento, limitando o compartilhamento e a escalabilidade.",
+      "B": "Utilizar switches Fibre Channel para distribuir o armazenamento entre vários datacenters físicos.",
+      "C": "Requerer um servidor de backup dedicado operando no protocolo NDMP.",
+      "D": "Operar obrigatoriamente através de redes sem fio de alta velocidade (Wi-Fi 6)."
+    },
+    "correta": "A",
+    "comentario": "O DAS é o modelo mais tradicional (ex: um HD interno ou um storage USB). Ele pertence exclusivamente à máquina onde está conectado, criando ilhas de armazenamento difíceis de escalar e gerenciar.",
+    "id": 1773324103571
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "No contexto de componentes de uma rede SAN, o que é um HBA (Host Bus Adapter)?",
+    "opcoes": {
+      "A": "Um software de backup que gerencia a biblioteca de fitas.",
+      "B": "Um protocolo de roteamento utilizado para interligar switches iSCSI.",
+      "C": "Uma placa de expansão instalada no servidor que provê a interface física e o processamento para a conexão com a rede de armazenamento (Fibre Channel).",
+      "D": "Um tipo de disco rígido magnético focado em alta capacidade e baixa rotação."
+    },
+    "correta": "C",
+    "comentario": "O HBA atua na rede SAN (Fibre Channel) da mesma forma que uma placa de rede (NIC) atua em uma rede LAN (Ethernet), descarregando o processamento do protocolo I/O da CPU do servidor.",
+    "id": 1773324107561
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "O protocolo FCoE (Fibre Channel over Ethernet) foi desenvolvido para resolver qual desafio de infraestrutura nos datacenters?",
+    "opcoes": {
+      "A": "A lentidão das fitas magnéticas durante backups incrementais.",
+      "B": "A necessidade de manter e cabear duas redes físicas separadas (uma LAN Ethernet para dados e uma SAN FC para armazenamento).",
+      "C": "A limitação de tamanho de arquivos imposta pelos sistemas NAS baseados em Linux.",
+      "D": "A falta de criptografia nativa nos discos rígidos SATA."
+    },
+    "correta": "B",
+    "comentario": "O FCoE encapsula quadros nativos do Fibre Channel dentro de pacotes Ethernet. Isso permite a convergência de redes (CNA - Converged Network Adapter), usando um único cabo para tráfego LAN e SAN.",
+    "id": 1773324104930
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "Ao configurar o espelhamento de dados (Mirroring) para garantir tolerância a falhas sem focar em ganho de desempenho de gravação, qual nível de RAID deve ser escolhido?",
+    "opcoes": {
+      "A": "RAID 0",
+      "B": "RAID 1",
+      "C": "RAID 5",
+      "D": "RAID 6"
+    },
+    "correta": "B",
+    "comentario": "O RAID 1 grava os mesmos dados simultaneamente em dois (ou mais) discos. Se um disco falhar, o sistema continua operando com o disco espelho. O custo é a perda de 50% da capacidade total bruta.",
+    "id": 1773324107655
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "O RAID 5 oferece tolerância a falhas através da paridade distribuída. Qual é o número MÍNIMO de discos físicos necessários para montar um arranjo RAID 5 e quantos discos ele tolera perder simultaneamente sem perda de dados?",
+    "opcoes": {
+      "A": "Mínimo de 2 discos; tolera falha de 1 disco.",
+      "B": "Mínimo de 3 discos; tolera falha de 1 disco.",
+      "C": "Mínimo de 4 discos; tolera falha de 2 discos.",
+      "D": "Mínimo de 3 discos; tolera falha de 2 discos."
+    },
+    "correta": "B",
+    "comentario": "O RAID 5 espalha os dados e a paridade por todos os discos. Ele exige no mínimo 3 discos e suporta a falha de apenas 1 disco. Para tolerar a falha de 2 discos simultâneos, seria necessário o RAID 6.",
+    "id": 1773324105169
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "O RAID 0 (Striping) divide os dados em blocos e os espalha por vários discos. Qual é a sua principal característica em relação a desempenho e redundância?",
+    "opcoes": {
+      "A": "Baixo desempenho de leitura e alta redundância de dados.",
+      "B": "Alto desempenho de leitura/gravação, mas nenhuma tolerância a falhas (se um disco queimar, o array inteiro é perdido).",
+      "C": "Recuperação automática de dados corrompidos usando bits de paridade dedicados.",
+      "D": "Capacidade de espelhar dados para um datacenter remoto."
+    },
+    "correta": "B",
+    "comentario": "O RAID 0 foca inteiramente em performance somando a velocidade e a capacidade dos discos, mas não possui paridade ou espelhamento. É voltado para dados temporários que exigem alta velocidade.",
+    "id": 1773324102454
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "Sobre as estratégias de replicação de dados entre datacenters, qual é a principal característica da Replicação Síncrona?",
+    "opcoes": {
+      "A": "A gravação no storage primário só é confirmada para a aplicação (ACK) após o storage secundário (remoto) também confirmar a gravação, garantindo RPO zero.",
+      "B": "Os dados são gravados no storage local e enviados para o remoto posteriormente, sem atrasar o desempenho da aplicação local.",
+      "C": "É utilizada exclusivamente para links de longa distância (acima de 1.000 km) via internet pública.",
+      "D": "Realiza backups baseados em fita a cada 24 horas."
+    },
+    "correta": "A",
+    "comentario": "A replicação síncrona garante perda de dados zero (RPO = 0), mas exige links de baixíssima latência (curta distância). Se a gravação remota falhar ou atrasar, a aplicação local também sofre impacto.",
+    "id": 1773324106512
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "No modelo de cópia de segurança incremental, o sistema realiza o backup de quais dados?",
+    "opcoes": {
+      "A": "Todos os dados do servidor toda vez que o backup é executado, ignorando backups anteriores.",
+      "B": "Apenas dos arquivos que foram modificados ou criados desde a execução do último backup TOTAL.",
+      "C": "Apenas dos arquivos que foram modificados ou criados desde o ÚLTIMO backup realizado (seja ele total ou incremental).",
+      "D": "Apenas do sistema operacional e dos registros de boot da máquina."
+    },
+    "correta": "C",
+    "comentario": "O backup incremental salva apenas as diferenças desde qualquer último backup. É o mais rápido para executar, mas o mais lento para restaurar, pois exige o último Full e todos os Incrementais subsequentes na ordem.",
+    "id": 1773324102527
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "Qual é a vantagem do backup Diferencial em relação ao backup Incremental na hora de realizar uma restauração completa (Restore) do sistema?",
+    "opcoes": {
+      "A": "O backup diferencial não utiliza fitas magnéticas, tornando a leitura mecânica mais ágil.",
+      "B": "A restauração requer apenas o último backup Full e o último backup Diferencial, tornando o processo de restore muito mais rápido e menos suscetível a falhas de mídia intermediária.",
+      "C": "O backup diferencial ocupa menos espaço de armazenamento em disco do que o incremental.",
+      "D": "A restauração ignora arquivos corrompidos automaticamente via protocolos SAN."
+    },
+    "correta": "B",
+    "comentario": "O Diferencial copia tudo que mudou desde o último backup FULL. O volume de dados do backup cresce a cada dia, mas a restauração é simples (1 Full + 1 Diferencial). No Incremental, seria necessário o Full + TODOS os incrementos diários.",
+    "id": 1773324108100
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "A arquitetura de backup 'LAN-free' foi criada para resolver qual problema operacional em redes corporativas?",
+    "opcoes": {
+      "A": "O congestionamento da rede local (LAN) durante as janelas de backup de grandes volumes de dados.",
+      "B": "A necessidade de licenças caras de sistemas operacionais em servidores de arquivos NAS.",
+      "C": "A lentidão na fragmentação de discos rígidos do tipo SAS.",
+      "D": "O tempo gasto pelos usuários finais formatando fitas LTO na estação de trabalho."
+    },
+    "correta": "A",
+    "comentario": "No backup LAN-free, o tráfego pesado de cópia dos dados vai do Storage diretamente para o dispositivo de Backup trafegando por uma rede dedicada (como a SAN FC), não impactando a rede IP de produção (LAN).",
+    "id": 1773324101614
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "Em uma arquitetura de backup 'Server-free', como os dados são transferidos do armazenamento primário para a mídia de backup?",
+    "opcoes": {
+      "A": "Os dados passam pelo processador e pela memória RAM do servidor de aplicação antes de chegarem à unidade de fita.",
+      "B": "Os arquivos são compactados pelos usuários nas estações cliente e enviados via FTP.",
+      "C": "O storage de origem envia os dados diretamente para o dispositivo de backup (ex: usando comandos Extended Copy / NDMP), bypassando completamente a CPU e RAM do servidor de aplicação.",
+      "D": "A cópia é feita manualmente pela equipe de TI via cabos USB cruzados."
+    },
+    "correta": "C",
+    "comentario": "O Server-free evolui o conceito de LAN-free. Ele não apenas livra a rede LAN, mas também tira a carga de I/O do servidor, pois a cópia ocorre diretamente entre os controladores de storage e backup.",
+    "id": 1773324104672
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "O que é uma Tape Library (Biblioteca de Fitas) e qual seu caso de uso principal?",
+    "opcoes": {
+      "A": "Um software de compactação de arquivos para envio de dados em nuvem pública.",
+      "B": "Um equipamento de armazenamento mecânico composto por braços robóticos, drives de leitura/gravação e slots de fitas magnéticas (como LTO), utilizado para arquivamento e retenção de dados a longo prazo (Cold Data).",
+      "C": "Um arranjo de discos de estado sólido (SSD) configurado em RAID 0 para altíssima performance.",
+      "D": "Um catálogo em papel que registra as chaves de criptografia das cópias do sistema."
+    },
+    "correta": "B",
+    "comentario": "A Tape Library automatiza a troca de fitas em grandes operações de backup. As fitas oferecem altíssima capacidade, durabilidade e proteção contra ransomware (air-gap) a um baixo custo por Terabyte.",
+    "id": 1773324107772
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "No modelo de armazenamento SAN, a interconexão das placas HBA, switches FC e Storages utiliza um padrão de nomes mundialmente exclusivos para endereçamento no tecido da rede. Qual o nome desse identificador de 64 bits?",
+    "opcoes": {
+      "A": "MAC Address",
+      "B": "Endereço IPv6",
+      "C": "WWN (World Wide Name)",
+      "D": "VLAN ID"
+    },
+    "correta": "C",
+    "comentario": "Nas redes Fibre Channel (SAN), os dispositivos são identificados pelos WWNs (WWNN para o nó e WWPN para as portas), que exercem função análoga ao endereço MAC das redes Ethernet (LAN).",
+    "id": 1773324107356
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "O RAID 10 (ou 1+0) é um arranjo híbrido (nested RAID). Como ele estrutura os dados nos discos?",
+    "opcoes": {
+      "A": "Combina o espelhamento de dados (RAID 1) em conjuntos de discos com o particionamento de blocos (RAID 0) entre esses espelhos, oferecendo alta performance e tolerância a falhas.",
+      "B": "Usa discos de paridade dupla para resistir à perda de até 10 discos simultâneos.",
+      "C": "Comprime os dados 10 vezes antes de salvá-los no disco primário.",
+      "D": "Cria um RAID 0 que replica blocos para a fita magnética a cada 10 segundos."
+    },
+    "correta": "A",
+    "comentario": "O RAID 10 exige no mínimo 4 discos. Ele cria espelhos (pares em RAID 1) e depois faz um striping (RAID 0) por cima desses pares. É o nível mais recomendado para bancos de dados de alta transação (I/O intensivo).",
+    "id": 1773324102311
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "Em planos de recuperação de desastres (Disaster Recovery), o que define a métrica RPO (Recovery Point Objective)?",
+    "opcoes": {
+      "A": "O tempo máximo permitido para consertar o hardware defeituoso.",
+      "B": "A quantidade máxima de perda de dados tolerável (medida em tempo) desde o último backup até o momento da falha.",
+      "C": "O tempo máximo estipulado para que a operação de TI volte a funcionar após um desastre (Recovery Time Objective).",
+      "D": "O número mínimo de fitas magnéticas necessárias para uma restauração total."
+    },
+    "correta": "B",
+    "comentario": "O RPO foca nos DADOS (quanto tempo de informação posso perder?). O RTO foca no TEMPO DE PARADA (em quanto tempo o sistema deve voltar ao ar?).",
+    "id": 1773324151610
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "Qual técnica é utilizada em redes SAN Fibre Channel para restringir a comunicação entre portas específicas dos switches, isolando o tráfego e aumentando a segurança?",
+    "opcoes": {
+      "A": "VLAN Tagging",
+      "B": "Port Security MAC",
+      "C": "Zoning",
+      "D": "LUN Masking"
+    },
+    "correta": "C",
+    "comentario": "O Zoning é configurado nos switches da SAN. Ele divide a rede de armazenamento em zonas, garantindo que apenas HBAs e portas de storages autorizados conversem entre si.",
+    "id": 1773324160514
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "Enquanto o Zoning atua na camada da rede SAN (switches), qual técnica atua diretamente na controladora do Storage para garantir que um servidor acesse apenas os volumes lógicos designados a ele?",
+    "opcoes": {
+      "A": "LUN Masking",
+      "B": "RAID Parity",
+      "C": "Spanning Tree Protocol",
+      "D": "CHAP Authentication"
+    },
+    "correta": "A",
+    "comentario": "O LUN Masking (Mascaramento de LUN) é uma configuração de segurança no próprio Storage que vincula o WWN do servidor ao LUN (Logical Unit Number), ocultando os demais discos.",
+    "id": 1773324160699
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "Quais são os protocolos de rede mais comuns utilizados por dispositivos NAS (Network Attached Storage) para o compartilhamento de arquivos em ambientes Windows e Unix/Linux, respectivamente?",
+    "opcoes": {
+      "A": "iSCSI e FCoE",
+      "B": "SMB/CIFS e NFS",
+      "C": "FTP e TFTP",
+      "D": "HTTP e SSH"
+    },
+    "correta": "B",
+    "comentario": "O NAS atua em nível de arquivo. O SMB (Server Message Block), também conhecido como CIFS, é o padrão Microsoft. O NFS (Network File System) é o padrão nos sistemas baseados em Unix/Linux.",
+    "id": 1773324153300
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "O arranjo RAID 6 é uma evolução do RAID 5. Qual é a sua principal característica técnica para garantir maior resiliência?",
+    "opcoes": {
+      "A": "Utiliza espelhamento quádruplo de blocos (mirroring), necessitando de 4 vezes mais espaço livre.",
+      "B": "Armazena a paridade em um disco rígido dedicado exclusivamente a essa função.",
+      "C": "Utiliza dupla paridade distribuída entre todos os discos, permitindo que o array continue operando mesmo com a falha simultânea de até dois discos físicos.",
+      "D": "Remove a paridade para aumentar o desempenho de gravação em 60%."
+    },
+    "correta": "C",
+    "comentario": "A dupla paridade (dois cálculos matemáticos diferentes espalhados pelos discos) é a marca do RAID 6. Exige no mínimo 4 discos para ser montado e sobrevive à perda de 2.",
+    "id": 1773324153739
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "Ao contrário da replicação síncrona, a replicação assíncrona de dados entre storages é mais adequada para qual cenário?",
+    "opcoes": {
+      "A": "Datacenters no mesmo prédio que exigem perda zero de dados (RPO = 0).",
+      "B": "Datacenters separados por longas distâncias, onde a latência do link inviabiliza a espera pela confirmação remota, assumindo-se um RPO maior que zero.",
+      "C": "Sincronização exclusiva de clusters de alta disponibilidade (HA) de roteadores LAN.",
+      "D": "Espelhamento de partições do sistema operacional local para discos USB."
+    },
+    "correta": "B",
+    "comentario": "A replicação assíncrona envia os dados para o site remoto em 'lotes' de tempos em tempos. Ela não trava o storage primário esperando o ACK remoto, sendo ideal para replicação entre estados/países.",
+    "id": 1773324158409
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "No gerenciamento de fitas de backup, o esquema GFS (Grandfather-Father-Son) baseia-se em qual estratégia?",
+    "opcoes": {
+      "A": "Compressão de arquivos em 3 níveis antes de gravar na fita.",
+      "B": "Uso de 3 storages de marcas diferentes para garantir conformidade de hardware.",
+      "C": "Rotação e retenção de mídias estruturada em backups diários (Filho), semanais (Pai) e mensais/anuais (Avô).",
+      "D": "Cópia do backup total apenas na terceira sexta-feira de cada mês."
+    },
+    "correta": "C",
+    "comentario": "O GFS é o padrão da indústria para arquivamento. O 'Filho' (backups incrementais/diferenciais diários) sofre reciclagem rápida. O 'Pai' (Full semanal) guarda o histórico do mês. O 'Avô' (Full mensal) é arquivado permanentemente ou por anos.",
+    "id": 1773324155847
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "Qual tecnologia de otimização de armazenamento reduz a necessidade de espaço físico ao identificar e eliminar blocos de dados repetidos antes ou depois da gravação, mantendo apenas um ponteiro para o bloco original?",
+    "opcoes": {
+      "A": "Criptografia de disco",
+      "B": "Deduplicação (Deduplication)",
+      "C": "Desfragmentação",
+      "D": "Compactação LZ77"
+    },
+    "correta": "B",
+    "comentario": "A deduplicação analisa os dados em nível de bloco. Se dezenas de usuários salvam o mesmo anexo de e-mail ou sistema operacional, o storage grava o bloco apenas uma vez e cria referências virtuais para os demais.",
+    "id": 1773324154539
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "No contexto de storages corporativos, o que caracteriza tecnicamente um Snapshot?",
+    "opcoes": {
+      "A": "Um backup físico completo, bloco por bloco, para outro storage remoto.",
+      "B": "Uma cópia lógica e instantânea (point-in-time) do volume, criada utilizando ponteiros e metadados, congelando o estado dos dados sem duplicar os blocos de imediato.",
+      "C": "A exportação dos logs do servidor para a fita LTO em formato aberto.",
+      "D": "A varredura preventiva (Scrubbing) em discos RAID para achar bad blocks."
+    },
+    "correta": "B",
+    "comentario": "Snapshots são quase instantâneos e não ocupam espaço logo que são criados. Eles funcionam na base do Copy-on-Write (CoW), gravando apenas os blocos que forem alterados a partir daquele momento no tempo.",
+    "id": 1773324159035
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "Qual protocolo de rede de armazenamento em bloco (block-level) permite transmitir comandos de disco sobre redes Ethernet/IP comuns, sendo amplamente adotado como uma alternativa mais barata ao Fibre Channel?",
+    "opcoes": {
+      "A": "FTP",
+      "B": "iSCSI (Internet Small Computer Systems Interface)",
+      "C": "NFSv4",
+      "D": "HTTPS"
+    },
+    "correta": "B",
+    "comentario": "O iSCSI encapsula comandos SCSI dentro de pacotes TCP/IP, permitindo montar redes SAN usando switches e placas de rede (NICs) Ethernet padrão.",
+    "id": 1773324152757
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "Como funciona um backup do tipo 'Full Sintético' (Synthetic Full)?",
+    "opcoes": {
+      "A": "O servidor de backup constrói um novo backup total localmente, mesclando o último backup Full com os incrementos posteriores, aliviando a carga do servidor de produção.",
+      "B": "Ele faz o backup apenas do sistema operacional vazio (sintético), sem os dados dos usuários.",
+      "C": "Substitui as fitas magnéticas por nuvens públicas (AWS/Azure).",
+      "D": "É um simulado de backup que não grava dados reais, apenas verifica a integridade do disco."
+    },
+    "correta": "A",
+    "comentario": "Em vez de copiar todo o volume do servidor primário pela rede novamente (o que demora), o software de backup gera um arquivo FULL 'sintético' processando os arquivos que ele já tem armazenados no próprio repositório.",
+    "id": 1773324153742
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "Em uma matriz de discos corporativa (Storage Array), o que é um disco configurado como 'Hot Spare'?",
+    "opcoes": {
+      "A": "Um disco de estado sólido (SSD) usado exclusivamente como cache de leitura para acelerar os discos HDDs.",
+      "B": "Um disco com sistema de resfriamento líquido ativo.",
+      "C": "Um disco extra ocioso que assume automaticamente o lugar de qualquer disco do grupo RAID que venha a falhar, iniciando a reconstrução (rebuild) dos dados sem intervenção humana.",
+      "D": "Um disco virtual armazenado temporariamente na memória RAM."
+    },
+    "correta": "C",
+    "comentario": "O Hot Spare fica energizado ('quente') esperando uma falha. Assim que a controladora detecta a queda de um disco, ela joga o Hot Spare para dentro do RAID e inicia a restauração da paridade/espelho na mesma hora.",
+    "id": 1773324153122
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "Qual é a finalidade principal do software de Multipathing (Múltiplos Caminhos) configurado nos servidores conectados a uma rede SAN?",
+    "opcoes": {
+      "A": "Quebrar arquivos grandes em pedaços menores para passar pelo switch Ethernet.",
+      "B": "Permitir que o servidor continue enxergando o mesmo LUN (disco) através de rotas alternativas de hardware (balanceamento de carga e redundância), caso uma placa HBA ou cabo falhe.",
+      "C": "Formatar discos com múltiplos sistemas de arquivos ao mesmo tempo (NTFS e ext4).",
+      "D": "Atuar como um firewall de banco de dados SQL interceptando requisições SAN."
+    },
+    "correta": "B",
+    "comentario": "Sem Multipathing (como o MPIO do Windows), o sistema operacional enxergaria o mesmo disco várias vezes (uma para cada cabo/rota) de forma confusa. O Multipath unifica isso em um único disco virtual tolerante a falhas físicas.",
+    "id": 1773324157145
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "Qual protocolo padrão da indústria foi projetado especificamente para realizar cópias de segurança de dispositivos NAS em fita ou disco, separando o tráfego de controle do tráfego de dados?",
+    "opcoes": {
+      "A": "SNMP",
+      "B": "NDMP (Network Data Management Protocol)",
+      "C": "BGP",
+      "D": "RSYNC"
+    },
+    "correta": "B",
+    "comentario": "O NDMP permite que o software de backup comande o NAS para enviar os dados diretamente para uma unidade de fita conectada à SAN (Server-free/LAN-free backup), desafogando o servidor de backup.",
+    "id": 1773324157971
+  },
+  {
+    "materia": "3. Armazenamento de dados e cópias de segurança",
+    "pergunta": "Para que o protocolo convergente FCoE (Fibre Channel over Ethernet) funcione corretamente de forma determinística sem perder pacotes em momentos de congestionamento, a infraestrutura Ethernet exige o suporte à qual tecnologia?",
+    "opcoes": {
+      "A": "PoE (Power over Ethernet)",
+      "B": "VTP (VLAN Trunking Protocol)",
+      "C": "DCB (Data Center Bridging) / Ethernet sem Perdas (Lossless Ethernet)",
+      "D": "CSMA/CD nativo"
+    },
+    "correta": "C",
+    "comentario": "O Fibre Channel tradicional não tolera perda (descarte) de quadros. Como o Ethernet padrão descarta pacotes se houver gargalo, o FCoE exige switches com extensões DCB (PFC - Priority Flow Control) para pausar o tráfego antes que ocorram quedas de quadros.",
+    "id": 1773324154874
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "O que difere fundamentalmente a conteinerização (ex: Docker) da virtualização tradicional (Máquinas Virtuais)?",
+    "opcoes": {
+      "A": "Conteineres emulam o hardware físico completo.",
+      "B": "Conteineres compartilham o kernel do sistema operacional hospedeiro, enquanto VMs exigem um SO completo (Guest OS) para cada instância.",
+      "C": "VMs são mais leves e iniciam em milissegundos.",
+      "D": "Conteinerização não suporta isolamento de rede."
+    },
+    "correta": "B",
+    "comentario": "Compartilhar o kernel torna os contêineres extremamente leves, rápidos e eficientes em consumo de recursos se comparados às Máquinas Virtuais.",
+    "id": 1773326657057
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "No ecossistema Linux, qual recurso do kernel é responsável por fornecer o isolamento lógico (ex: isolar a árvore de processos, rede e pontos de montagem) para um contêiner?",
+    "opcoes": {
+      "A": "Cgroups",
+      "B": "Namespaces",
+      "C": "SELinux",
+      "D": "Hypervisor"
+    },
+    "correta": "B",
+    "comentario": "Namespaces garantem que um contêiner enxergue apenas seus próprios recursos lógicos, criando a ilusão de um sistema operacional isolado.",
+    "id": 1773326654508
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "Enquanto os Namespaces fornecem isolamento lógico, qual recurso do kernel Linux é utilizado para limitar, contabilizar e isolar o consumo de recursos físicos (CPU, Memória, I/O) dos contêineres?",
+    "opcoes": {
+      "A": "Chroot",
+      "B": "IPTables",
+      "C": "Control Groups (Cgroups)",
+      "D": "LVM"
+    },
+    "correta": "C",
+    "comentario": "Os Cgroups impedem que um único contêiner consuma toda a memória ou CPU do host, garantindo a distribuição justa e segura de recursos de hardware.",
+    "id": 1773326650943
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "Qual é o papel do SELinux (Security-Enhanced Linux) no contexto de conteinerização?",
+    "opcoes": {
+      "A": "Gerenciar o roteamento de pacotes TCP/IP.",
+      "B": "Aplicar políticas de Controle de Acesso Obrigatório (MAC), restringindo ações e isolando processos do contêiner em relação ao host.",
+      "C": "Compactar imagens Docker para economizar espaço em disco.",
+      "D": "Substituir o daemon do Docker em sistemas Red Hat."
+    },
+    "correta": "B",
+    "comentario": "O SELinux adiciona uma forte camada extra de segurança, rotulando processos para impedir que um contêiner comprometido acesse áreas não autorizadas do kernel ou do host.",
+    "id": 1773326652893
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "Como é tratada a persistência de dados no Docker, sabendo que a camada de gravação do contêiner é apagada quando ele é destruído?",
+    "opcoes": {
+      "A": "Os dados são salvos automaticamente no Docker Hub a cada 5 minutos.",
+      "B": "Utilizam-se Volumes ou Bind Mounts para mapear diretórios do host para dentro do contêiner, mantendo os dados seguros de forma independente.",
+      "C": "O Docker converte o contêiner em uma VM automaticamente.",
+      "D": "Os dados devem ser gravados estritamente na memória RAM (tmpfs)."
+    },
+    "correta": "B",
+    "comentario": "Volumes são o mecanismo oficial e recomendado pelo Docker para persistir dados de aplicações (como bancos de dados) fora do ciclo de vida efêmero do contêiner.",
+    "id": 1773326648870
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "O comando 'docker run -p 8080:80 nginx' executa qual ação relacionada a redes (Port Forwarding)?",
+    "opcoes": {
+      "A": "Bloqueia o tráfego da porta 80 do contêiner.",
+      "B": "Mapeia a porta externa 8080 da máquina hospedeira (host) para a porta interna 80 do contêiner.",
+      "C": "Altera a porta de escuta do Nginx de 80 para 8080 internamente.",
+      "D": "Redireciona requisições de outros contêineres para a porta 8080."
+    },
+    "correta": "B",
+    "comentario": "A sintaxe de publicação de portas é sempre '-p <porta_do_host>:<porta_do_container>'. Isso permite acesso externo ao serviço rodando isolado no contêiner.",
+    "id": 1773326647344
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "O Git é classificado como qual tipo de ferramenta?",
+    "opcoes": {
+      "A": "Sistema de Controle de Versão Centralizado (CVCS).",
+      "B": "Sistema de Controle de Versão Distribuído (DVCS).",
+      "C": "Sistema de Backup em Fita (TBS).",
+      "D": "Sistema de Orquestração de Contêineres."
+    },
+    "correta": "B",
+    "comentario": "No Git, cada desenvolvedor possui uma cópia completa (clone) do repositório localmente, não dependendo de conexão contínua com um servidor central para versionar arquivos.",
+    "id": 1773326654726
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "Quais são as três áreas principais (estados) onde os arquivos residem no fluxo de trabalho básico do Git?",
+    "opcoes": {
+      "A": "Untracked, Ignored, Pushed.",
+      "B": "Working Directory, Staging Area e Repository.",
+      "C": "Branch, Tag, Merge.",
+      "D": "Local, Remote, Cloud."
+    },
+    "correta": "B",
+    "comentario": "O arquivo é editado no Diretório de Trabalho (Working Directory), marcado para o próximo commit na Área de Preparação (Staging/Index) e consolidado no Repositório (Commit).",
+    "id": 1773326652700
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "Qual comando Git é responsável por enviar os commits locais consolidados para atualizar um repositório remoto?",
+    "opcoes": {
+      "A": "git fetch",
+      "B": "git pull",
+      "C": "git push",
+      "D": "git send"
+    },
+    "correta": "C",
+    "comentario": "O 'git push' empurra (sobe) o histórico de commits do repositório local para as respectivas branches do repositório remoto (ex: GitHub, GitLab).",
+    "id": 1773326649125
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "O que uma Imagem Docker representa conceitualmente?",
+    "opcoes": {
+      "A": "Um processo interativo em execução na memória.",
+      "B": "Um pacote/template somente-leitura (read-only) contendo código, dependências e bibliotecas necessárias para criar um contêiner.",
+      "C": "Um volume de armazenamento formatado em ext4.",
+      "D": "Uma interface de rede do tipo bridge."
+    },
+    "correta": "B",
+    "comentario": "Imagens são 'moldes' imutáveis. O contêiner é a instância em execução (viva) gerada a partir dessa imagem.",
+    "id": 1773326651585
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "Ao trabalhar com Git, qual o propósito principal do comando 'git merge'?",
+    "opcoes": {
+      "A": "Apagar branches antigas fundindo-as no limbo.",
+      "B": "Desfazer o último commit de forma destrutiva.",
+      "C": "Integrar (mesclar) as alterações de uma branch no histórico da branch atual.",
+      "D": "Renomear diretórios no repositório remoto."
+    },
+    "correta": "C",
+    "comentario": "O merge une linhas de desenvolvimento paralelas, trazendo os commits de uma branch (ex: nova-funcionalidade) para a branch principal (main/master).",
+    "id": 1773326653595
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "No Docker, o que faz o comando 'docker build'?",
+    "opcoes": {
+      "A": "Baixa uma imagem pronta do Docker Hub.",
+      "B": "Remove todas as imagens órfãs.",
+      "C": "Constrói (compila) uma nova imagem Docker a partir das instruções definidas em um arquivo chamado Dockerfile.",
+      "D": "Inicia a execução de um contêiner em segundo plano."
+    },
+    "correta": "C",
+    "comentario": "O Dockerfile é o script com a receita do ambiente. O 'docker build' processa essas instruções passo a passo para gerar uma nova imagem customizada.",
+    "id": 1773326653639
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "Qual o efeito exato da operação 'git pull' em um repositório local?",
+    "opcoes": {
+      "A": "Envia alterações para o servidor remoto.",
+      "B": "Apenas baixa os metadados do servidor sem alterar os arquivos locais.",
+      "C": "Baixa as alterações do repositório remoto e as mescla imediatamente com a branch local atual (equivale a git fetch + git merge).",
+      "D": "Clona um repositório inexistente."
+    },
+    "correta": "C",
+    "comentario": "O 'git pull' é um comando de conveniência que sincroniza seu ambiente local, puxando as novidades do remoto e atualizando diretamente seus arquivos de trabalho.",
+    "id": 1773326656444
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "Para desenvolver uma nova funcionalidade sem alterar o código principal estável da aplicação, qual recurso do Git deve ser utilizado?",
+    "opcoes": {
+      "A": "Stash",
+      "B": "Branch (Ramificação)",
+      "C": "Rebase",
+      "D": "Commit amend"
+    },
+    "correta": "B",
+    "comentario": "Branches criam linhas do tempo independentes no projeto. Você pode modificar, testar e quebrar código na sua branch sem afetar o código de produção dos outros desenvolvedores.",
+    "id": 1773326654159
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "Nas redes Docker, qual é o driver de rede padrão criado para permitir a comunicação entre contêineres que rodam no mesmo host físico?",
+    "opcoes": {
+      "A": "Host",
+      "B": "Overlay",
+      "C": "Macvlan",
+      "D": "Bridge"
+    },
+    "correta": "D",
+    "comentario": "O modo Bridge ('docker0') cria uma rede virtual privada interna no host. Contêineres conectados a essa bridge recebem IPs locais e comunicam-se nativamente entre si.",
+    "id": 1773326654739
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "Qual arquivo é utilizado para instruir o Git a não rastrear intencionalmente determinados arquivos ou diretórios (como arquivos compilados ou contendo senhas)?",
+    "opcoes": {
+      "A": ".gitconfig",
+      "B": ".gitmodules",
+      "C": ".gitignore",
+      "D": ".gitexclude"
+    },
+    "correta": "C",
+    "comentario": "O arquivo .gitignore lista padrões de nomes e extensões (ex: *.log, /node_modules) que o Git deve ignorar, impedindo que lixo ou dados sensíveis subam para o repositório remoto.",
+    "id": 1773327625178
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "Para obter uma cópia local exata de um repositório Git que já existe em um servidor remoto, qual comando é utilizado?",
+    "opcoes": {
+      "A": "git init",
+      "B": "git fetch",
+      "C": "git clone",
+      "D": "git pull"
+    },
+    "correta": "C",
+    "comentario": "O 'git clone' baixa todo o histórico, branches e arquivos do repositório remoto, além de configurar automaticamente o link 'origin' para facilitar futuros envios (push).",
+    "id": 1773327627193
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "Após adicionar arquivos à Staging Area (área de preparação com 'git add'), qual comando efetivamente salva o estado atual do projeto no histórico do repositório local?",
+    "opcoes": {
+      "A": "git push",
+      "B": "git add",
+      "C": "git save",
+      "D": "git commit"
+    },
+    "correta": "D",
+    "comentario": "O 'git commit' consolida as mudanças que estavam no Stage, criando um novo nó no histórico local (tirando uma 'fotografia' do código naquele exato momento).",
+    "id": 1773327620371
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "Para visualizar o histórico cronológico de commits de um repositório, identificando autores, datas e mensagens, utiliza-se o comando:",
+    "opcoes": {
+      "A": "git log",
+      "B": "git status",
+      "C": "git diff",
+      "D": "git show"
+    },
+    "correta": "A",
+    "comentario": "O 'git log' exibe a linha do tempo dos commits. Já o 'git status' mostra apenas o estado atual da área de trabalho (arquivos modificados, staged ou untracked).",
+    "id": 1773327624323
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "Para alternar a área de trabalho de uma branch (ramificação) para outra, qual comando Git é tradicionalmente utilizado?",
+    "opcoes": {
+      "A": "git change",
+      "B": "git checkout",
+      "C": "git branch",
+      "D": "git move"
+    },
+    "correta": "B",
+    "comentario": "O 'git checkout' (ou o mais recente 'git switch') atualiza os arquivos visíveis no seu diretório de trabalho para corresponderem exatamente ao estado da branch selecionada.",
+    "id": 1773327620498
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "Para listar apenas os contêineres que estão ATUALMENTE em execução no Docker host, utiliza-se o comando:",
+    "opcoes": {
+      "A": "docker ps",
+      "B": "docker images",
+      "C": "docker ps -a",
+      "D": "docker list"
+    },
+    "correta": "A",
+    "comentario": "O 'docker ps' mostra apenas os ativos. Adicionando a flag '-a' (all), ele lista absolutamente todos os contêineres, incluindo os que já foram parados ou que falharam.",
+    "id": 1773327620232
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "Para executar um novo comando (como abrir um terminal bash interativo) dentro de um contêiner que JÁ ESTÁ em execução, utiliza-se:",
+    "opcoes": {
+      "A": "docker run",
+      "B": "docker exec",
+      "C": "docker attach",
+      "D": "docker start"
+    },
+    "correta": "B",
+    "comentario": "O 'docker exec' entra no contêiner que já está rodando (ex: docker exec -it ubuntu bash). O 'docker run' criaria um contêiner totalmente novo do zero.",
+    "id": 1773327622314
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "No gerenciamento de persistência de dados no Docker, qual é a principal diferença técnica entre um 'Volume' e um 'Bind Mount'?",
+    "opcoes": {
+      "A": "Volumes não persistem dados após o reboot; Bind Mounts sim.",
+      "B": "Volumes são gerenciados inteiramente pelo Docker em um local restrito do host (/var/lib/docker/volumes), enquanto Bind Mounts mapeiam qualquer diretório absoluto escolhido pelo usuário no sistema hospedeiro.",
+      "C": "Bind Mounts criptografam nativamente os dados no disco.",
+      "D": "Volumes só funcionam em infraestruturas Windows Server."
+    },
+    "correta": "B",
+    "comentario": "Volumes são a melhor prática pois o Docker isola e gerencia a criação/limpeza deles. Bind mounts dependem da estrutura exata de pastas do host, o que pode quebrar a portabilidade.",
+    "id": 1773327625689
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "Qual comando é usado para baixar uma imagem do repositório padrão (Docker Hub) para o host local SEM iniciar um contêiner imediatamente?",
+    "opcoes": {
+      "A": "docker fetch",
+      "B": "docker download",
+      "C": "docker pull",
+      "D": "docker clone"
+    },
+    "correta": "C",
+    "comentario": "O 'docker pull' baixa as camadas da imagem e as armazena no cache local. O 'docker run' executa o pull automaticamente apenas se a imagem não existir localmente.",
+    "id": 1773327621351
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "Para excluir definitivamente uma Imagem Docker do armazenamento local do host, qual comando é o correto?",
+    "opcoes": {
+      "A": "docker rm",
+      "B": "docker rmi",
+      "C": "docker delete",
+      "D": "docker clean"
+    },
+    "correta": "B",
+    "comentario": "O comando 'docker rmi' remove imagens (Image). O comando 'docker rm' remove apenas instâncias de contêineres que já foram paradas.",
+    "id": 1773327625236
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "O Docker opera em uma arquitetura Cliente-Servidor. Como se chama o processo em segundo plano (background) no host responsável por construir, executar e distribuir efetivamente os contêineres?",
+    "opcoes": {
+      "A": "Docker CLI",
+      "B": "Docker Compose",
+      "C": "Docker Daemon (dockerd)",
+      "D": "Docker Hub"
+    },
+    "correta": "C",
+    "comentario": "O Docker Daemon escuta as requisições da API e faz o trabalho pesado (gerencia imagens, redes, contêineres). O Docker CLI no terminal é apenas o cliente que envia as ordens ao Daemon.",
+    "id": 1773327628082
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "Durante um 'git merge', o que o Git faz quando a MESMA LINHA de um arquivo foi alterada de formas diferentes nas duas branches que estão sendo unidas?",
+    "opcoes": {
+      "A": "Sobrescreve automaticamente o arquivo mantendo a alteração mais recente pelo relógio.",
+      "B": "Pausa o merge e sinaliza um estado de Conflito (Conflict), exigindo que o desenvolvedor edite o arquivo manualmente para decidir qual alteração manter.",
+      "C": "Apaga o arquivo problemático para proteger a integridade do repositório.",
+      "D": "Reverte automaticamente todos os commits da branch de destino."
+    },
+    "correta": "B",
+    "comentario": "O Git não tenta adivinhar a intenção lógica do programador. Ele insere marcadores no código (<<<< === >>>>) e exige que um humano resolva o conflito antes de confirmar o merge.",
+    "id": 1773327628388
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "No comando de port forward 'docker run -p 8080:80 nginx', a qual ambiente pertencem as portas 8080 e 80, respectivamente?",
+    "opcoes": {
+      "A": "Ambas pertencem estritamente ao contêiner.",
+      "B": "8080 é a porta aberta na máquina física (Host) e 80 é a porta interna do Contêiner.",
+      "C": "8080 é a porta interna do Contêiner e 80 é a porta da máquina física (Host).",
+      "D": "8080 é o IP de origem e 80 é o protocolo de transporte."
+    },
+    "correta": "B",
+    "comentario": "A regra da sintaxe do Docker é sempre 'PortaDoHost : PortaDoContainer'. Assim, o tráfego que bate na 8080 da sua máquina é canalizado para a 80 isolada no nginx.",
+    "id": 1773327627571
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "Em resumo técnico, qual frase define corretamente a divisão de responsabilidades entre Namespaces e Cgroups no kernel Linux para a formação de um contêiner?",
+    "opcoes": {
+      "A": "Namespaces limitam o quanto você pode usar; Cgroups limitam o que você pode ver.",
+      "B": "Ambos têm a exata mesma função de segurança, variando apenas o nome conforme a distribuição.",
+      "C": "Namespaces limitam o que um processo pode VER (isolamento); Cgroups limitam o quanto de recurso físico um processo pode USAR (cotas/limites).",
+      "D": "Namespaces gerenciam a criptografia do disco; Cgroups gerenciam as regras do iptables."
+    },
+    "correta": "C",
+    "comentario": "Namespaces cuidam do isolamento de visão (cada contêiner acha que é a única máquina). Cgroups cuidam do controle de hardware (evitando que um contêiner monopolize a RAM da máquina física).",
+    "id": 1773327622656
+  },
+  {
+    "materia": "4. Conteinerização e versionamento",
+    "pergunta": "Uma boa prática central na filosofia de conteinerização é a 'Imutabilidade'. O que isso significa na prática operacional do dia a dia?",
+    "opcoes": {
+      "A": "Se o software no contêiner precisar de atualização, não se deve acessá-lo via SSH para atualizar; deve-se atualizar o Dockerfile, gerar uma nova imagem e recriar o contêiner do zero.",
+      "B": "Contêineres não podem receber novas conexões de rede após serem iniciados.",
+      "C": "Não é possível apagar imagens depois que elas são criadas.",
+      "D": "O código fonte da aplicação deve ser criptografado e não pode usar Git."
+    },
+    "correta": "A",
+    "comentario": "Contêineres são efêmeros e descartáveis. Alterações feitas 'na mão' dentro de um contêiner rodando se perdem quando ele morre. A infraestrutura imutável garante que todo deploy seja 100% reproduzível a partir da imagem original.",
+    "id": 1773327627894
   }
 ]
