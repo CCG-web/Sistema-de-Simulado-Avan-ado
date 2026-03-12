@@ -1,0 +1,433 @@
+[
+  {
+    "materia": "Língua Portuguesa",
+    "pergunta": "teste",
+    "opcoes": {
+      "A": "teste",
+      "B": "teste",
+      "C": "teste",
+      "D": "c"
+    },
+    "correta": "A"
+  },
+  {
+    "materia": "Sistemas Computacionais",
+    "pergunta": "Qual componente da CPU é responsável por gerenciar as temporizações e sinais que direcionam a operação do processador?",
+    "opcoes": {
+      "A": "Unidade Lógica e Aritmética (ULA)",
+      "B": "Unidade de Controle (UC)",
+      "C": "Memória Cache L1",
+      "D": "Registrador de Dados"
+    },
+    "correta": "B",
+    "comentario": "A UC coordena as atividades da CPU, buscando instruções na memória e gerando os sinais de controle para os demais componentes."
+  },
+  {
+    "materia": "Sistemas Computacionais",
+    "pergunta": "Na hierarquia de memória de um computador, qual tipo apresenta a maior velocidade de acesso e a menor capacidade de armazenamento?",
+    "opcoes": {
+      "A": "Memória Secundária (SSD/HD)",
+      "B": "Memória Principal (RAM)",
+      "C": "Memória Cache",
+      "D": "Registradores"
+    },
+    "correta": "D",
+    "comentario": "Os registradores ficam internamente na CPU e operam na mesma velocidade do núcleo, sendo os elementos mais rápidos da hierarquia."
+  },
+  {
+    "materia": "Sistemas Computacionais",
+    "pergunta": "O uso de pipeline na arquitetura de computadores tem como objetivo principal:",
+    "opcoes": {
+      "A": "Reduzir o tempo de execução de uma única instrução isolada.",
+      "B": "Diminuir o consumo de energia da placa-mãe.",
+      "C": "Aumentar a vazão (throughput) sobrepondo a execução de múltiplas instruções.",
+      "D": "Substituir a necessidade de memória cache."
+    },
+    "correta": "C",
+    "comentario": "O pipeline divide a execução em estágios, permitindo que várias instruções sejam processadas simultaneamente em fases diferentes, aumentando o throughput total."
+  },
+  {
+    "materia": "Sistemas Computacionais",
+    "pergunta": "Qual barramento a CPU utiliza para especificar o local físico na memória onde os dados devem ser lidos ou gravados?",
+    "opcoes": {
+      "A": "Barramento de Dados",
+      "B": "Barramento de Controle",
+      "C": "Barramento de Endereços",
+      "D": "Barramento Serial"
+    },
+    "correta": "C",
+    "comentario": "O barramento de endereços é unidirecional (da CPU para a memória/periféricos) e indica o endereço do dado que será acessado."
+  },
+  {
+    "materia": "Sistemas Computacionais",
+    "pergunta": "O número binário 1010 corresponde a qual valor nos sistemas decimal e hexadecimal, respectivamente?",
+    "opcoes": {
+      "A": "10 e A",
+      "B": "12 e C",
+      "C": "8 e 8",
+      "D": "10 e B"
+    },
+    "correta": "A",
+    "comentario": "1010 em binário = (1x8) + (0x4) + (1x2) + (0x1) = 10 em decimal. No sistema hexadecimal, o valor 10 é representado pela letra A."
+  },
+  {
+    "materia": "Sistemas Computacionais",
+    "pergunta": "Qual a principal diferença entre um compilador e um interpretador?",
+    "opcoes": {
+      "A": "O compilador traduz linha por linha durante a execução; o interpretador gera um executável completo.",
+      "B": "O compilador traduz todo o código fonte para linguagem de máquina de uma só vez; o interpretador traduz e executa instrução por instrução.",
+      "C": "O interpretador é utilizado exclusivamente para linguagens de baixo nível (Assembly).",
+      "D": "Compiladores são mais lentos na execução do programa final do que os interpretadores."
+    },
+    "correta": "B",
+    "comentario": "Programas compilados (ex: C) geram um binário executado diretamente pelo SO. Programas interpretados (ex: Python) são executados sob demanda pelo interpretador."
+  },
+  {
+    "materia": "Sistemas Computacionais",
+    "pergunta": "Em linguagens de script (roteiros), a tipagem de variáveis e a execução do código são, em regra, caracterizadas como:",
+    "opcoes": {
+      "A": "Estática e compilada.",
+      "B": "Dinâmica e interpretada.",
+      "C": "Estática e interpretada.",
+      "D": "Dinâmica e compilada."
+    },
+    "correta": "B",
+    "comentario": "Scripts geralmente adotam tipagem dinâmica (o tipo é inferido e pode mudar em tempo de execução) e rodam em interpretadores."
+  },
+  {
+    "materia": "Sistemas Computacionais",
+    "pergunta": "A técnica de DMA (Direct Memory Access) é fundamental para dispositivos de E/S porque:",
+    "opcoes": {
+      "A": "Aumenta a velocidade do clock da CPU durante processamentos pesados.",
+      "B": "Permite que periféricos transfiram blocos de dados diretamente para a memória sem a intervenção contínua da CPU.",
+      "C": "Criptografa dados trafegando no barramento de controle.",
+      "D": "Substitui as interrupções de hardware (IRQs) por pooling."
+    },
+    "correta": "B",
+    "comentario": "O DMA libera a CPU para executar outras tarefas enquanto a transferência de dados entre o periférico e a memória acontece de forma independente."
+  },
+  {
+    "materia": "Sistemas Computacionais",
+    "pergunta": "A representação em 'Complemento de 2' é amplamente adotada nas arquiteturas modernas para:",
+    "opcoes": {
+      "A": "Representar números em ponto flutuante (decimais).",
+      "B": "Mapear caracteres alfanuméricos padrão (ASCII).",
+      "C": "Representar números inteiros com sinal (positivos e negativos), simplificando os circuitos de adição e subtração.",
+      "D": "Comprimir arquivos e gerenciar a paginação de memória."
+    },
+    "correta": "C",
+    "comentario": "O Complemento de 2 permite que a ULA realize operações de subtração usando os mesmos circuitos lógicos empregados na adição."
+  },
+  {
+    "materia": "Sistemas Computacionais",
+    "pergunta": "O ciclo básico de execução de uma instrução pela CPU é composto por três etapas principais. Qual a sequência correta?",
+    "opcoes": {
+      "A": "Executar (Execute), Decodificar (Decode), Buscar (Fetch).",
+      "B": "Buscar (Fetch), Executar (Execute), Armazenar (Store).",
+      "C": "Decodificar (Decode), Buscar (Fetch), Executar (Execute).",
+      "D": "Buscar (Fetch), Decodificar (Decode), Executar (Execute)."
+    },
+    "correta": "D",
+    "comentario": "A CPU primeiro busca a instrução na memória (Fetch), depois interpreta o que precisa ser feito (Decode) e por fim realiza a operação (Execute)."
+  },
+  {
+    "materia": "Sistemas Computacionais",
+    "pergunta": "Qual é a principal característica da Arquitetura de Von Neumann?",
+    "opcoes": {
+      "A": "Separação física entre a memória de dados e a memória de instruções.",
+      "B": "Utilização de múltiplos processadores compartilhando a mesma memória cache.",
+      "C": "Armazenamento de dados e instruções na mesma memória, utilizando o mesmo barramento.",
+      "D": "Execução exclusiva de programas interpretados, sem suporte a código compilado."
+    },
+    "correta": "C",
+    "comentario": "Na arquitetura de Von Neumann, dados e instruções compartilham a mesma memória e barramento, o que pode gerar o famoso 'Gargalo de Von Neumann'. A arquitetura que os separa é a de Harvard."
+  },
+  {
+    "materia": "Sistemas Computacionais",
+    "pergunta": "As arquiteturas de processadores são frequentemente divididas em RISC e CISC. Uma característica típica de um processador RISC é:",
+    "opcoes": {
+      "A": "Conjunto de instruções complexas e de tamanho variável.",
+      "B": "Muitas instruções que acessam a memória diretamente.",
+      "C": "Conjunto reduzido de instruções simples, de tamanho fixo, executadas em um único ciclo de clock.",
+      "D": "Dependência exclusiva de microcódigo interno para executar qualquer instrução."
+    },
+    "correta": "C",
+    "comentario": "RISC (Reduced Instruction Set Computer) foca em instruções simples e rápidas, usando muitos registradores. Apenas instruções de LOAD e STORE acessam a memória."
+  },
+  {
+    "materia": "Sistemas Computacionais",
+    "pergunta": "Dentro da hierarquia de memória, qual é a principal diferença entre a RAM (Memória Principal) e a ROM?",
+    "opcoes": {
+      "A": "A RAM é não-volátil (retém dados sem energia), enquanto a ROM é volátil.",
+      "B": "A RAM é volátil (perde dados sem energia), enquanto a ROM é não-volátil e usada para armazenar a BIOS/Firmware.",
+      "C": "A RAM é mais lenta que a ROM e os discos magnéticos.",
+      "D": "A ROM é utilizada exclusivamente como memória virtual pelo sistema operacional."
+    },
+    "correta": "B",
+    "comentario": "A RAM precisa de energia para manter os dados (volátil). A ROM mantém os dados gravados mesmo sem energia (não-volátil), sendo ideal para o processo de boot do computador."
+  },
+  {
+    "materia": "Sistemas Computacionais",
+    "pergunta": "Em sistemas de Entrada e Saída (E/S), o que é uma Interrupção (Interrupt)?",
+    "opcoes": {
+      "A": "Um erro fatal que obriga o computador a reiniciar.",
+      "B": "Uma técnica onde a CPU verifica repetidamente o status de um periférico (polling).",
+      "C": "Um sinal enviado por um hardware ou software à CPU, indicando que um evento precisa de atenção imediata.",
+      "D": "O processo de desligamento do barramento de dados para economizar energia."
+    },
+    "correta": "C",
+    "comentario": "A interrupção pausa o fluxo atual da CPU, salva seu estado e executa uma rotina específica (handler) para tratar o evento do periférico, retomando o fluxo anterior em seguida."
+  },
+  {
+    "materia": "Sistemas Computacionais",
+    "pergunta": "No contexto de execução em pipeline, o que é um 'Hazard' (ou bolha)?",
+    "opcoes": {
+      "A": "Um aumento inesperado na velocidade do clock da CPU.",
+      "B": "Uma condição que impede a próxima instrução do fluxo de ser executada no ciclo de clock designado.",
+      "C": "Um tipo de memória cache ultra-rápida.",
+      "D": "Uma instrução que apaga todos os dados dos registradores."
+    },
+    "correta": "B",
+    "comentario": "Hazards (conflitos) podem ser estruturais, de dados ou de controle (ex: desvios/branches). Eles forçam o pipeline a pausar (inserir bolhas), reduzindo a eficiência teórica."
+  },
+  {
+    "materia": "Sistemas Computacionais",
+    "pergunta": "O valor hexadecimal 0xFF equivale a qual valor no sistema decimal?",
+    "opcoes": {
+      "A": "128",
+      "B": "255",
+      "C": "256",
+      "D": "15"
+    },
+    "correta": "B",
+    "comentario": "No sistema hexadecimal, 'F' vale 15. Logo, FF = (15 * 16^1) + (15 * 16^0) = 240 + 15 = 255."
+  },
+  {
+    "materia": "Sistemas Computacionais",
+    "pergunta": "Para representar números fracionários (com casas decimais) em sistemas computacionais, a arquitetura moderna utiliza o padrão IEEE 754, conhecido como:",
+    "opcoes": {
+      "A": "Complemento de 2 Fracionário.",
+      "B": "Ponto Flutuante (Floating Point).",
+      "C": "Binário Codificado em Decimal (BCD).",
+      "D": "Ponto Fixo de 16 bits."
+    },
+    "correta": "B",
+    "comentario": "O padrão de Ponto Flutuante (IEEE 754) divide o número em sinal, expoente e mantissa (fração), permitindo representar números muito grandes ou muito pequenos com precisão relativa."
+  },
+  {
+    "materia": "Sistemas Computacionais",
+    "pergunta": "Na lógica de programação, as estruturas de controle de repetição (como 'for' e 'while') são usadas em scripts para:",
+    "opcoes": {
+      "A": "Tomar decisões baseadas em condições estáticas (if/else).",
+      "B": "Declarar variáveis globais de sistema.",
+      "C": "Executar um bloco de código múltiplas vezes enquanto uma condição for verdadeira.",
+      "D": "Traduzir o código fonte para linguagem de máquina."
+    },
+    "correta": "C",
+    "comentario": "Estruturas de repetição (loops) automatizam tarefas repetitivas, executando o mesmo bloco de código repetidamente baseadas em uma condição de parada."
+  },
+  {
+    "materia": "Sistemas Computacionais",
+    "pergunta": "O que é a compilação JIT (Just-In-Time) utilizada em várias linguagens modernas (como Java ou C#)?",
+    "opcoes": {
+      "A": "Uma técnica que traduz todo o código fonte para binário antes do usuário instalar o programa.",
+      "B": "Uma técnica que compila o código intermediário (bytecode) para código de máquina nativo no exato momento da execução.",
+      "C": "Um interpretador puro que lê o código fonte linha por linha toda vez que o programa roda.",
+      "D": "Um processo exclusivo de montadores (assemblers) para traduzir mnemônicos."
+    },
+    "correta": "B",
+    "comentario": "O JIT une a portabilidade do interpretador com a velocidade do compilador. Ele traduz blocos de código intermediário para linguagem de máquina durante a execução, otimizando o desempenho na máquina local."
+  },
+  {
+    "materia": "Sistemas Computacionais",
+    "pergunta": "Sobre as memórias Cache L1, L2 e L3 de um processador, é correto afirmar que:",
+    "opcoes": {
+      "A": "A L3 é a mais rápida de todas e fica localizada fora do processador, na placa-mãe.",
+      "B": "A L1 é a menor e mais rápida, localizada mais próxima aos núcleos de execução da CPU.",
+      "C": "Não há diferença de velocidade entre elas, apenas de fabricante.",
+      "D": "A L2 substitui a memória RAM quando o computador fica sem espaço."
+    },
+    "correta": "B",
+    "comentario": "A cache L1 é dividida por núcleo, sendo a mais rápida e de menor capacidade. A L2 é intermediária, e a L3 geralmente é compartilhada entre todos os núcleos, sendo a maior e mais lenta entre as caches, mas ainda muito mais rápida que a RAM."
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Qual algoritmo de escalonamento de processos atribui uma fatia de tempo (quantum) igual para cada processo, alternando entre eles em uma fila circular?",
+    "opcoes": {
+      "A": "First-Come, First-Served (FCFS)",
+      "B": "Shortest Job First (SJF)",
+      "C": "Round Robin",
+      "D": "Múltiplas Filas (Multilevel Queue)"
+    },
+    "correta": "C",
+    "comentario": "O Round Robin (Chaveamento Circular) é desenhado para sistemas de tempo compartilhado, onde cada processo ganha um 'quantum' de tempo da CPU para garantir justiça na execução."
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Na gerência de memória, qual a principal diferença estrutural entre paginação e segmentação?",
+    "opcoes": {
+      "A": "Paginação divide a memória em blocos de tamanho variável, enquanto a segmentação usa blocos de tamanho fixo.",
+      "B": "Paginação divide a memória física em blocos de tamanho fixo (frames), enquanto a segmentação usa blocos de tamanho variável baseados na lógica do programa.",
+      "C": "A paginação sofre gravemente de fragmentação externa, o que não ocorre na segmentação.",
+      "D": "A segmentação impede o uso de memória virtual, sendo exclusiva para a memória RAM física."
+    },
+    "correta": "B",
+    "comentario": "A paginação resolve a fragmentação externa usando páginas/frames de tamanho fixo. A segmentação divide a memória em blocos lógicos variáveis (ex: funções, objetos) do ponto de vista do programador."
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "O conceito de 'Thrashing' em gerenciamento de memória virtual ocorre quando:",
+    "opcoes": {
+      "A": "A CPU atinge 100% de uso processando cálculos matemáticos complexos.",
+      "B": "O sistema passa mais tempo trocando páginas entre a RAM e o disco (swap) do que executando processos úteis.",
+      "C": "Ocorre uma falha física no disco rígido, corrompendo as páginas mapeadas.",
+      "D": "A memória cache L1 fica cheia de instruções ociosas bloqueando o pipeline."
+    },
+    "correta": "B",
+    "comentario": "Thrashing é um estado de degradação severa de desempenho onde a falta de memória física faz o SO gastar quase todo o tempo apenas paginando (fazendo swap) em vez de executar os programas."
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Qual é a principal vantagem do uso de threads (processos leves) em comparação com múltiplos processos tradicionais (pesados)?",
+    "opcoes": {
+      "A": "Threads em um mesmo processo compartilham o mesmo espaço de endereçamento de memória e recursos.",
+      "B": "Threads não podem ser interrompidas pelo escalonador do SO, garantindo execução contínua.",
+      "C": "Cada thread possui seu próprio espaço de memória isolado, aumentando a segurança.",
+      "D": "Threads são imunes a condições de corrida (race conditions) em bancos de dados."
+    },
+    "correta": "A",
+    "comentario": "Diferente de processos distintos, threads criadas dentro do mesmo processo compartilham dados e recursos (como memória), tornando a criação, comunicação e troca de contexto entre elas muito mais rápidas e leves para o SO."
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Em um ambiente Linux, qual a principal diferença conceitual entre o Kernel e o Shell?",
+    "opcoes": {
+      "A": "O Kernel é uma interface gráfica, enquanto o Shell é a interface de linha de comando.",
+      "B": "O Kernel é o núcleo que interage diretamente com o hardware, enquanto o Shell atua como um interpretador que recebe comandos do usuário e os envia ao Kernel.",
+      "C": "O Shell é o sistema de arquivos base do Linux, e o Kernel gerencia a rede LAN.",
+      "D": "Não há diferença, ambos são componentes de inicialização da BIOS."
+    },
+    "correta": "B",
+    "comentario": "O Kernel é o centro do SO (hardware, memória, processos), enquanto o Shell (bash, zsh) é o programa que fornece a interface para o usuário digitar comandos e interagir com o sistema."
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "No Bash Shell, qual operador é utilizado para redirecionar a saída padrão (stdout) de um comando e anexá-la ao final de um arquivo existente, preservando o conteúdo anterior?",
+    "opcoes": {
+      "A": ">",
+      "B": "<",
+      "C": ">>",
+      "D": "2>"
+    },
+    "correta": "C",
+    "comentario": "O operador '>' cria um arquivo novo ou sobrescreve um existente. O operador '>>' faz o append (anexa) da saída ao final do arquivo atual."
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "O que significa aplicar a permissão especial SUID (Set User ID) em um arquivo executável no Linux (ex: comando 'passwd')?",
+    "opcoes": {
+      "A": "Impede que qualquer usuário que não seja o root execute o arquivo.",
+      "B": "Permite que o arquivo seja executado com os privilégios do proprietário do arquivo, independentemente de quem o execute.",
+      "C": "Transforma o arquivo em um serviço de sistema (daemon) persistente.",
+      "D": "Aplica uma camada de criptografia ao arquivo executável."
+    },
+    "correta": "B",
+    "comentario": "O SUID permite que usuários comuns executem programas temporariamente com direitos elevados (geralmente de root), pois o processo ganha a identidade do dono do arquivo durante a execução."
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Na arquitetura do LVM (Logical Volume Manager) no Linux, qual é a ordem correta das camadas de abstração, do nível mais baixo (físico) para o mais alto (lógico)?",
+    "opcoes": {
+      "A": "Logical Volume (LV) -> Volume Group (VG) -> Physical Volume (PV)",
+      "B": "Volume Group (VG) -> Physical Volume (PV) -> Logical Volume (LV)",
+      "C": "Physical Volume (PV) -> Volume Group (VG) -> Logical Volume (LV)",
+      "D": "Physical Volume (PV) -> Logical Volume (LV) -> Volume Group (VG)"
+    },
+    "correta": "C",
+    "comentario": "A estrutura correta inicializa partições/discos como PVs (Physical Volumes), agrupa esses PVs em um VG (Volume Group), e recorta fatias do VG para criar os LVs (Logical Volumes), onde os sistemas de arquivos serão montados."
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "No Active Directory (AD) do Windows Server, qual a principal função de uma Unidade Organizacional (OU)?",
+    "opcoes": {
+      "A": "Atuar como um limite de replicação entre domínios diferentes.",
+      "B": "Agrupar objetos (como usuários e computadores) em um contêiner para delegar administração e aplicar Políticas de Grupo (GPOs).",
+      "C": "Resolver nomes NetBIOS em ambientes legados.",
+      "D": "Criar uma relação de confiança (Trust) bidirecional com domínios externos."
+    },
+    "correta": "B",
+    "comentario": "As OUs são as divisões lógicas mais básicas dentro de um domínio AD utilizadas para organizar objetos, permitindo a delegação de controle administrativo e a aplicação de políticas (GPOs) específicas a setores ou equipes."
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Em um servidor DNS (como o BIND9), qual é o objetivo da criação de uma Zona de Pesquisa Reversa (Reverse Lookup Zone)?",
+    "opcoes": {
+      "A": "Traduzir endereços IP de volta para nomes de domínio (FQDN).",
+      "B": "Descobrir qual é o servidor de e-mail (MX) responsável por um domínio.",
+      "C": "Balancear a carga de requisições web entre vários IPs.",
+      "D": "Mapear nomes NetBIOS para endereços MAC da camada de enlace."
+    },
+    "correta": "A",
+    "comentario": "A pesquisa direta traduz Nomes em IPs. A pesquisa reversa recebe um IP e retorna o nome de domínio associado, utilizando registros do tipo PTR."
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Qual porta padrão o serviço de diretório OpenLDAP utiliza para comunicações não criptografadas ou via StartTLS, e qual é a porta para conexões LDAPS (LDAP sobre SSL)?",
+    "opcoes": {
+      "A": "Portas 80 e 443",
+      "B": "Portas 389 e 636",
+      "C": "Portas 21 e 22",
+      "D": "Portas 53 e 67"
+    },
+    "correta": "B",
+    "comentario": "O tráfego LDAP padrão (podendo ser elevado para StartTLS) escuta na porta TCP 389, enquanto o LDAPS (conexão integralmente sob túnel TLS/SSL desde o início) utiliza a porta TCP 636."
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Em um proxy SQUID configurado no modo 'Transparente' (Interceptador), qual a principal facilidade para os clientes da rede corporativa?",
+    "opcoes": {
+      "A": "Os clientes precisam configurar um arquivo PAC manualmente em seus navegadores.",
+      "B": "Todo o tráfego HTTPS é descriptografado sem avisos de certificado inválido no cliente.",
+      "C": "As requisições HTTP são redirecionadas pelo firewall para o proxy de forma invisível, eliminando a necessidade de configuração nos navegadores.",
+      "D": "O proxy desativa seu cache local, atuando estritamente como um roteador NAT."
+    },
+    "correta": "C",
+    "comentario": "No proxy transparente, o roteador/firewall intercepta requisições da porta 80 e envia para a porta do Squid de forma transparente, facilitando a administração pois nenhum dispositivo precisa ser configurado individualmente."
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Ao configurar o Netfilter/iptables no Linux, a política padrão de uma chain é configurada com a opção -P. O que faz o comando 'iptables -P INPUT DROP'?",
+    "opcoes": {
+      "A": "Apaga todas as regras existentes na tabela nat.",
+      "B": "Define o bloqueio padrão: todos os pacotes de entrada são descartados silenciosamente, a não ser que uma regra específica os libere.",
+      "C": "Desativa temporariamente o firewall de entrada.",
+      "D": "Redireciona pacotes bloqueados para a chain de FORWARD."
+    },
+    "correta": "B",
+    "comentario": "A diretiva define a política padrão (Policy) da chain INPUT para DROP. É a prática recomendada de segurança: 'negação por padrão', onde o que não está explicitamente permitido é bloqueado."
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "O Captive Portal é amplamente utilizado em redes sem fio para controle de acesso à Internet. Qual técnica ele normalmente emprega para forçar o usuário não autenticado a ver a tela de login?",
+    "opcoes": {
+      "A": "Desativa a concessão de DHCP e obriga o uso de IP estático aprovado pelo administrador.",
+      "B": "Intercepção e redirecionamento de tráfego HTTP ou resolução DNS (DNS spoofing) para a página do portal.",
+      "C": "Instalação de um Root CA (certificado de raiz) nos navegadores dos visitantes via porta 443.",
+      "D": "Bloqueio do endereço MAC diretamente nos switches de camada 2."
+    },
+    "correta": "B",
+    "comentario": "Quando um cliente não autenticado tenta navegar, o Captive Portal manipula suas requisições DNS ou redireciona seu tráfego HTTP para forçar o navegador a apresentar a página web do portal (para login ou aceite de termos)."
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Considerando o tuning e performance do servidor web Apache, qual a diferença básica entre os módulos de processamento múltiplo (MPMs) 'Prefork' e 'Worker'?",
+    "opcoes": {
+      "A": "O Prefork utiliza um processo isolado sem threads para cada requisição; o Worker utiliza processos que contêm múltiplas threads, consumindo menos RAM.",
+      "B": "O Prefork é o padrão exclusivo do Windows Server, enquanto o Worker é exclusivo do ambiente Linux.",
+      "C": "O Prefork não suporta PHP, exigindo que linguagens dinâmicas rodem no Worker.",
+      "D": "O Prefork foca na entrega de arquivos estáticos gigantes, enquanto o Worker lida apenas com bancos de dados."
+    },
+    "correta": "A",
+    "comentario": "O Prefork oferece alta estabilidade/compatibilidade (isolando requisições em processos únicos não-thread), porém gasta muita memória. O Worker é mais eficiente e escalável pois atende requisições utilizando múltiplas threads dentro de poucos processos, usando menos RAM."
+  }
+]
