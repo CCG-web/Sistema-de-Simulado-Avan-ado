@@ -8,7 +8,8 @@
       "C": "teste",
       "D": "c"
     },
-    "correta": "A"
+    "correta": "A",
+    "id": 1773320864431
   },
   {
     "materia": "Sistemas Computacionais",
@@ -20,7 +21,8 @@
       "D": "Registrador de Dados"
     },
     "correta": "B",
-    "comentario": "A UC coordena as atividades da CPU, buscando instruções na memória e gerando os sinais de controle para os demais componentes."
+    "comentario": "A UC coordena as atividades da CPU, buscando instruções na memória e gerando os sinais de controle para os demais componentes.",
+    "id": 1773320858222
   },
   {
     "materia": "Sistemas Computacionais",
@@ -32,7 +34,8 @@
       "D": "Registradores"
     },
     "correta": "D",
-    "comentario": "Os registradores ficam internamente na CPU e operam na mesma velocidade do núcleo, sendo os elementos mais rápidos da hierarquia."
+    "comentario": "Os registradores ficam internamente na CPU e operam na mesma velocidade do núcleo, sendo os elementos mais rápidos da hierarquia.",
+    "id": 1773320858018
   },
   {
     "materia": "Sistemas Computacionais",
@@ -44,7 +47,8 @@
       "D": "Substituir a necessidade de memória cache."
     },
     "correta": "C",
-    "comentario": "O pipeline divide a execução em estágios, permitindo que várias instruções sejam processadas simultaneamente em fases diferentes, aumentando o throughput total."
+    "comentario": "O pipeline divide a execução em estágios, permitindo que várias instruções sejam processadas simultaneamente em fases diferentes, aumentando o throughput total.",
+    "id": 1773320861487
   },
   {
     "materia": "Sistemas Computacionais",
@@ -56,7 +60,8 @@
       "D": "Barramento Serial"
     },
     "correta": "C",
-    "comentario": "O barramento de endereços é unidirecional (da CPU para a memória/periféricos) e indica o endereço do dado que será acessado."
+    "comentario": "O barramento de endereços é unidirecional (da CPU para a memória/periféricos) e indica o endereço do dado que será acessado.",
+    "id": 1773320859362
   },
   {
     "materia": "Sistemas Computacionais",
@@ -68,7 +73,8 @@
       "D": "10 e B"
     },
     "correta": "A",
-    "comentario": "1010 em binário = (1x8) + (0x4) + (1x2) + (0x1) = 10 em decimal. No sistema hexadecimal, o valor 10 é representado pela letra A."
+    "comentario": "1010 em binário = (1x8) + (0x4) + (1x2) + (0x1) = 10 em decimal. No sistema hexadecimal, o valor 10 é representado pela letra A.",
+    "id": 1773320857393
   },
   {
     "materia": "Sistemas Computacionais",
@@ -80,7 +86,8 @@
       "D": "Compiladores são mais lentos na execução do programa final do que os interpretadores."
     },
     "correta": "B",
-    "comentario": "Programas compilados (ex: C) geram um binário executado diretamente pelo SO. Programas interpretados (ex: Python) são executados sob demanda pelo interpretador."
+    "comentario": "Programas compilados (ex: C) geram um binário executado diretamente pelo SO. Programas interpretados (ex: Python) são executados sob demanda pelo interpretador.",
+    "id": 1773320863559
   },
   {
     "materia": "Sistemas Computacionais",
@@ -92,7 +99,8 @@
       "D": "Dinâmica e compilada."
     },
     "correta": "B",
-    "comentario": "Scripts geralmente adotam tipagem dinâmica (o tipo é inferido e pode mudar em tempo de execução) e rodam em interpretadores."
+    "comentario": "Scripts geralmente adotam tipagem dinâmica (o tipo é inferido e pode mudar em tempo de execução) e rodam em interpretadores.",
+    "id": 1773320861529
   },
   {
     "materia": "Sistemas Computacionais",
@@ -104,7 +112,8 @@
       "D": "Substitui as interrupções de hardware (IRQs) por pooling."
     },
     "correta": "B",
-    "comentario": "O DMA libera a CPU para executar outras tarefas enquanto a transferência de dados entre o periférico e a memória acontece de forma independente."
+    "comentario": "O DMA libera a CPU para executar outras tarefas enquanto a transferência de dados entre o periférico e a memória acontece de forma independente.",
+    "id": 1773320857852
   },
   {
     "materia": "Sistemas Computacionais",
@@ -116,7 +125,8 @@
       "D": "Comprimir arquivos e gerenciar a paginação de memória."
     },
     "correta": "C",
-    "comentario": "O Complemento de 2 permite que a ULA realize operações de subtração usando os mesmos circuitos lógicos empregados na adição."
+    "comentario": "O Complemento de 2 permite que a ULA realize operações de subtração usando os mesmos circuitos lógicos empregados na adição.",
+    "id": 1773320859994
   },
   {
     "materia": "Sistemas Computacionais",
@@ -128,7 +138,8 @@
       "D": "Buscar (Fetch), Decodificar (Decode), Executar (Execute)."
     },
     "correta": "D",
-    "comentario": "A CPU primeiro busca a instrução na memória (Fetch), depois interpreta o que precisa ser feito (Decode) e por fim realiza a operação (Execute)."
+    "comentario": "A CPU primeiro busca a instrução na memória (Fetch), depois interpreta o que precisa ser feito (Decode) e por fim realiza a operação (Execute).",
+    "id": 1773320861581
   },
   {
     "materia": "Sistemas Computacionais",
@@ -140,7 +151,8 @@
       "D": "Execução exclusiva de programas interpretados, sem suporte a código compilado."
     },
     "correta": "C",
-    "comentario": "Na arquitetura de Von Neumann, dados e instruções compartilham a mesma memória e barramento, o que pode gerar o famoso 'Gargalo de Von Neumann'. A arquitetura que os separa é a de Harvard."
+    "comentario": "Na arquitetura de Von Neumann, dados e instruções compartilham a mesma memória e barramento, o que pode gerar o famoso 'Gargalo de Von Neumann'. A arquitetura que os separa é a de Harvard.",
+    "id": 1773320865777
   },
   {
     "materia": "Sistemas Computacionais",
@@ -152,7 +164,8 @@
       "D": "Dependência exclusiva de microcódigo interno para executar qualquer instrução."
     },
     "correta": "C",
-    "comentario": "RISC (Reduced Instruction Set Computer) foca em instruções simples e rápidas, usando muitos registradores. Apenas instruções de LOAD e STORE acessam a memória."
+    "comentario": "RISC (Reduced Instruction Set Computer) foca em instruções simples e rápidas, usando muitos registradores. Apenas instruções de LOAD e STORE acessam a memória.",
+    "id": 1773320864093
   },
   {
     "materia": "Sistemas Computacionais",
@@ -164,7 +177,8 @@
       "D": "A ROM é utilizada exclusivamente como memória virtual pelo sistema operacional."
     },
     "correta": "B",
-    "comentario": "A RAM precisa de energia para manter os dados (volátil). A ROM mantém os dados gravados mesmo sem energia (não-volátil), sendo ideal para o processo de boot do computador."
+    "comentario": "A RAM precisa de energia para manter os dados (volátil). A ROM mantém os dados gravados mesmo sem energia (não-volátil), sendo ideal para o processo de boot do computador.",
+    "id": 1773320865735
   },
   {
     "materia": "Sistemas Computacionais",
@@ -176,7 +190,8 @@
       "D": "O processo de desligamento do barramento de dados para economizar energia."
     },
     "correta": "C",
-    "comentario": "A interrupção pausa o fluxo atual da CPU, salva seu estado e executa uma rotina específica (handler) para tratar o evento do periférico, retomando o fluxo anterior em seguida."
+    "comentario": "A interrupção pausa o fluxo atual da CPU, salva seu estado e executa uma rotina específica (handler) para tratar o evento do periférico, retomando o fluxo anterior em seguida.",
+    "id": 1773320863681
   },
   {
     "materia": "Sistemas Computacionais",
@@ -188,7 +203,8 @@
       "D": "Uma instrução que apaga todos os dados dos registradores."
     },
     "correta": "B",
-    "comentario": "Hazards (conflitos) podem ser estruturais, de dados ou de controle (ex: desvios/branches). Eles forçam o pipeline a pausar (inserir bolhas), reduzindo a eficiência teórica."
+    "comentario": "Hazards (conflitos) podem ser estruturais, de dados ou de controle (ex: desvios/branches). Eles forçam o pipeline a pausar (inserir bolhas), reduzindo a eficiência teórica.",
+    "id": 1773320857832
   },
   {
     "materia": "Sistemas Computacionais",
@@ -200,7 +216,8 @@
       "D": "15"
     },
     "correta": "B",
-    "comentario": "No sistema hexadecimal, 'F' vale 15. Logo, FF = (15 * 16^1) + (15 * 16^0) = 240 + 15 = 255."
+    "comentario": "No sistema hexadecimal, 'F' vale 15. Logo, FF = (15 * 16^1) + (15 * 16^0) = 240 + 15 = 255.",
+    "id": 1773320858001
   },
   {
     "materia": "Sistemas Computacionais",
@@ -212,7 +229,8 @@
       "D": "Ponto Fixo de 16 bits."
     },
     "correta": "B",
-    "comentario": "O padrão de Ponto Flutuante (IEEE 754) divide o número em sinal, expoente e mantissa (fração), permitindo representar números muito grandes ou muito pequenos com precisão relativa."
+    "comentario": "O padrão de Ponto Flutuante (IEEE 754) divide o número em sinal, expoente e mantissa (fração), permitindo representar números muito grandes ou muito pequenos com precisão relativa.",
+    "id": 1773320857065
   },
   {
     "materia": "Sistemas Computacionais",
@@ -224,7 +242,8 @@
       "D": "Traduzir o código fonte para linguagem de máquina."
     },
     "correta": "C",
-    "comentario": "Estruturas de repetição (loops) automatizam tarefas repetitivas, executando o mesmo bloco de código repetidamente baseadas em uma condição de parada."
+    "comentario": "Estruturas de repetição (loops) automatizam tarefas repetitivas, executando o mesmo bloco de código repetidamente baseadas em uma condição de parada.",
+    "id": 1773320858968
   },
   {
     "materia": "Sistemas Computacionais",
@@ -236,7 +255,8 @@
       "D": "Um processo exclusivo de montadores (assemblers) para traduzir mnemônicos."
     },
     "correta": "B",
-    "comentario": "O JIT une a portabilidade do interpretador com a velocidade do compilador. Ele traduz blocos de código intermediário para linguagem de máquina durante a execução, otimizando o desempenho na máquina local."
+    "comentario": "O JIT une a portabilidade do interpretador com a velocidade do compilador. Ele traduz blocos de código intermediário para linguagem de máquina durante a execução, otimizando o desempenho na máquina local.",
+    "id": 1773320860705
   },
   {
     "materia": "Sistemas Computacionais",
@@ -248,7 +268,8 @@
       "D": "A L2 substitui a memória RAM quando o computador fica sem espaço."
     },
     "correta": "B",
-    "comentario": "A cache L1 é dividida por núcleo, sendo a mais rápida e de menor capacidade. A L2 é intermediária, e a L3 geralmente é compartilhada entre todos os núcleos, sendo a maior e mais lenta entre as caches, mas ainda muito mais rápida que a RAM."
+    "comentario": "A cache L1 é dividida por núcleo, sendo a mais rápida e de menor capacidade. A L2 é intermediária, e a L3 geralmente é compartilhada entre todos os núcleos, sendo a maior e mais lenta entre as caches, mas ainda muito mais rápida que a RAM.",
+    "id": 1773320862578
   },
   {
     "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
@@ -260,7 +281,8 @@
       "D": "Múltiplas Filas (Multilevel Queue)"
     },
     "correta": "C",
-    "comentario": "O Round Robin (Chaveamento Circular) é desenhado para sistemas de tempo compartilhado, onde cada processo ganha um 'quantum' de tempo da CPU para garantir justiça na execução."
+    "comentario": "O Round Robin (Chaveamento Circular) é desenhado para sistemas de tempo compartilhado, onde cada processo ganha um 'quantum' de tempo da CPU para garantir justiça na execução.",
+    "id": 1773320864610
   },
   {
     "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
@@ -272,7 +294,8 @@
       "D": "A segmentação impede o uso de memória virtual, sendo exclusiva para a memória RAM física."
     },
     "correta": "B",
-    "comentario": "A paginação resolve a fragmentação externa usando páginas/frames de tamanho fixo. A segmentação divide a memória em blocos lógicos variáveis (ex: funções, objetos) do ponto de vista do programador."
+    "comentario": "A paginação resolve a fragmentação externa usando páginas/frames de tamanho fixo. A segmentação divide a memória em blocos lógicos variáveis (ex: funções, objetos) do ponto de vista do programador.",
+    "id": 1773320864210
   },
   {
     "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
@@ -284,7 +307,8 @@
       "D": "A memória cache L1 fica cheia de instruções ociosas bloqueando o pipeline."
     },
     "correta": "B",
-    "comentario": "Thrashing é um estado de degradação severa de desempenho onde a falta de memória física faz o SO gastar quase todo o tempo apenas paginando (fazendo swap) em vez de executar os programas."
+    "comentario": "Thrashing é um estado de degradação severa de desempenho onde a falta de memória física faz o SO gastar quase todo o tempo apenas paginando (fazendo swap) em vez de executar os programas.",
+    "id": 1773320863082
   },
   {
     "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
@@ -296,7 +320,8 @@
       "D": "Threads são imunes a condições de corrida (race conditions) em bancos de dados."
     },
     "correta": "A",
-    "comentario": "Diferente de processos distintos, threads criadas dentro do mesmo processo compartilham dados e recursos (como memória), tornando a criação, comunicação e troca de contexto entre elas muito mais rápidas e leves para o SO."
+    "comentario": "Diferente de processos distintos, threads criadas dentro do mesmo processo compartilham dados e recursos (como memória), tornando a criação, comunicação e troca de contexto entre elas muito mais rápidas e leves para o SO.",
+    "id": 1773320860566
   },
   {
     "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
@@ -308,7 +333,8 @@
       "D": "Não há diferença, ambos são componentes de inicialização da BIOS."
     },
     "correta": "B",
-    "comentario": "O Kernel é o centro do SO (hardware, memória, processos), enquanto o Shell (bash, zsh) é o programa que fornece a interface para o usuário digitar comandos e interagir com o sistema."
+    "comentario": "O Kernel é o centro do SO (hardware, memória, processos), enquanto o Shell (bash, zsh) é o programa que fornece a interface para o usuário digitar comandos e interagir com o sistema.",
+    "id": 1773320857605
   },
   {
     "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
@@ -320,7 +346,8 @@
       "D": "2>"
     },
     "correta": "C",
-    "comentario": "O operador '>' cria um arquivo novo ou sobrescreve um existente. O operador '>>' faz o append (anexa) da saída ao final do arquivo atual."
+    "comentario": "O operador '>' cria um arquivo novo ou sobrescreve um existente. O operador '>>' faz o append (anexa) da saída ao final do arquivo atual.",
+    "id": 1773320862940
   },
   {
     "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
@@ -332,7 +359,8 @@
       "D": "Aplica uma camada de criptografia ao arquivo executável."
     },
     "correta": "B",
-    "comentario": "O SUID permite que usuários comuns executem programas temporariamente com direitos elevados (geralmente de root), pois o processo ganha a identidade do dono do arquivo durante a execução."
+    "comentario": "O SUID permite que usuários comuns executem programas temporariamente com direitos elevados (geralmente de root), pois o processo ganha a identidade do dono do arquivo durante a execução.",
+    "id": 1773320864923
   },
   {
     "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
@@ -344,7 +372,8 @@
       "D": "Physical Volume (PV) -> Logical Volume (LV) -> Volume Group (VG)"
     },
     "correta": "C",
-    "comentario": "A estrutura correta inicializa partições/discos como PVs (Physical Volumes), agrupa esses PVs em um VG (Volume Group), e recorta fatias do VG para criar os LVs (Logical Volumes), onde os sistemas de arquivos serão montados."
+    "comentario": "A estrutura correta inicializa partições/discos como PVs (Physical Volumes), agrupa esses PVs em um VG (Volume Group), e recorta fatias do VG para criar os LVs (Logical Volumes), onde os sistemas de arquivos serão montados.",
+    "id": 1773320862481
   },
   {
     "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
@@ -356,7 +385,8 @@
       "D": "Criar uma relação de confiança (Trust) bidirecional com domínios externos."
     },
     "correta": "B",
-    "comentario": "As OUs são as divisões lógicas mais básicas dentro de um domínio AD utilizadas para organizar objetos, permitindo a delegação de controle administrativo e a aplicação de políticas (GPOs) específicas a setores ou equipes."
+    "comentario": "As OUs são as divisões lógicas mais básicas dentro de um domínio AD utilizadas para organizar objetos, permitindo a delegação de controle administrativo e a aplicação de políticas (GPOs) específicas a setores ou equipes.",
+    "id": 1773320858133
   },
   {
     "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
@@ -368,7 +398,8 @@
       "D": "Mapear nomes NetBIOS para endereços MAC da camada de enlace."
     },
     "correta": "A",
-    "comentario": "A pesquisa direta traduz Nomes em IPs. A pesquisa reversa recebe um IP e retorna o nome de domínio associado, utilizando registros do tipo PTR."
+    "comentario": "A pesquisa direta traduz Nomes em IPs. A pesquisa reversa recebe um IP e retorna o nome de domínio associado, utilizando registros do tipo PTR.",
+    "id": 1773320856698
   },
   {
     "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
@@ -380,7 +411,8 @@
       "D": "Portas 53 e 67"
     },
     "correta": "B",
-    "comentario": "O tráfego LDAP padrão (podendo ser elevado para StartTLS) escuta na porta TCP 389, enquanto o LDAPS (conexão integralmente sob túnel TLS/SSL desde o início) utiliza a porta TCP 636."
+    "comentario": "O tráfego LDAP padrão (podendo ser elevado para StartTLS) escuta na porta TCP 389, enquanto o LDAPS (conexão integralmente sob túnel TLS/SSL desde o início) utiliza a porta TCP 636.",
+    "id": 1773320857153
   },
   {
     "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
@@ -392,7 +424,8 @@
       "D": "O proxy desativa seu cache local, atuando estritamente como um roteador NAT."
     },
     "correta": "C",
-    "comentario": "No proxy transparente, o roteador/firewall intercepta requisições da porta 80 e envia para a porta do Squid de forma transparente, facilitando a administração pois nenhum dispositivo precisa ser configurado individualmente."
+    "comentario": "No proxy transparente, o roteador/firewall intercepta requisições da porta 80 e envia para a porta do Squid de forma transparente, facilitando a administração pois nenhum dispositivo precisa ser configurado individualmente.",
+    "id": 1773320860310
   },
   {
     "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
@@ -404,7 +437,8 @@
       "D": "Redireciona pacotes bloqueados para a chain de FORWARD."
     },
     "correta": "B",
-    "comentario": "A diretiva define a política padrão (Policy) da chain INPUT para DROP. É a prática recomendada de segurança: 'negação por padrão', onde o que não está explicitamente permitido é bloqueado."
+    "comentario": "A diretiva define a política padrão (Policy) da chain INPUT para DROP. É a prática recomendada de segurança: 'negação por padrão', onde o que não está explicitamente permitido é bloqueado.",
+    "id": 1773320862933
   },
   {
     "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
@@ -416,7 +450,8 @@
       "D": "Bloqueio do endereço MAC diretamente nos switches de camada 2."
     },
     "correta": "B",
-    "comentario": "Quando um cliente não autenticado tenta navegar, o Captive Portal manipula suas requisições DNS ou redireciona seu tráfego HTTP para forçar o navegador a apresentar a página web do portal (para login ou aceite de termos)."
+    "comentario": "Quando um cliente não autenticado tenta navegar, o Captive Portal manipula suas requisições DNS ou redireciona seu tráfego HTTP para forçar o navegador a apresentar a página web do portal (para login ou aceite de termos).",
+    "id": 1773320861189
   },
   {
     "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
@@ -428,6 +463,202 @@
       "D": "O Prefork foca na entrega de arquivos estáticos gigantes, enquanto o Worker lida apenas com bancos de dados."
     },
     "correta": "A",
-    "comentario": "O Prefork oferece alta estabilidade/compatibilidade (isolando requisições em processos únicos não-thread), porém gasta muita memória. O Worker é mais eficiente e escalável pois atende requisições utilizando múltiplas threads dentro de poucos processos, usando menos RAM."
+    "comentario": "O Prefork oferece alta estabilidade/compatibilidade (isolando requisições em processos únicos não-thread), porém gasta muita memória. O Worker é mais eficiente e escalável pois atende requisições utilizando múltiplas threads dentro de poucos processos, usando menos RAM.",
+    "id": 1773320859359
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Em modelos de entrada e saída, qual técnica permite que um periférico transfira dados diretamente para a memória principal sem a intervenção contínua da CPU?",
+    "opcoes": {
+      "A": "Polling (Espera Ocupada)",
+      "B": "Spooling",
+      "C": "Direct Memory Access (DMA)",
+      "D": "Interrupt Request (IRQ)"
+    },
+    "correta": "C",
+    "comentario": "O DMA libera a CPU durante a transferência de blocos de dados entre a memória e os dispositivos de I/O, aumentando o desempenho global do sistema.",
+    "id": 1773320868120
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Nos sistemas de arquivos do Linux (como ext4), qual estrutura armazena os metadados de um arquivo (permissões, dono, tamanho e blocos de dados), exceto o seu nome?",
+    "opcoes": {
+      "A": "Superbloco",
+      "B": "Inode (Index Node)",
+      "C": "Diretório raiz",
+      "D": "Tabela de Alocação de Arquivos (FAT)"
+    },
+    "correta": "B",
+    "comentario": "O Inode contém todas as informações administrativas. O nome do arquivo fica armazenado na estrutura de diretório, que faz um apontamento para o Inode correspondente.",
+    "id": 1773320875214
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "No Linux, qual sinal padrão é enviado pelo comando 'kill' (quando usado sem parâmetros numéricos) para solicitar o encerramento gracioso de um processo?",
+    "opcoes": {
+      "A": "SIGKILL (9)",
+      "B": "SIGINT (2)",
+      "C": "SIGTERM (15)",
+      "D": "SIGHUP (1)"
+    },
+    "correta": "C",
+    "comentario": "O SIGTERM (15) é o sinal padrão. Ele pede que o processo seja encerrado de forma limpa, permitindo fechar arquivos antes. O SIGKILL (9) força a parada imediata.",
+    "id": 1773320877862
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Na programação em bash shell, qual variável especial armazena o status de saída (exit code) do último comando executado?",
+    "opcoes": {
+      "A": "$?",
+      "B": "$$",
+      "C": "$@",
+      "D": "$#"
+    },
+    "correta": "A",
+    "comentario": "A variável '$?' guarda o código de retorno. Um valor '0' indica que o comando executou com sucesso, enquanto qualquer outro valor indica falha.",
+    "id": 1773320868321
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Para agrupar múltiplos arquivos em um único pacote e comprimi-los simultaneamente com gzip no Linux, qual comando e sintaxe são apropriados?",
+    "opcoes": {
+      "A": "zip -r arquivo.zip /pasta",
+      "B": "tar -czvf arquivo.tar.gz /pasta",
+      "C": "gzip -d arquivo.gz",
+      "D": "cp -r /pasta arquivo.tar"
+    },
+    "correta": "B",
+    "comentario": "No tar, 'c' cria, 'z' usa compressão gzip, 'v' ativa o modo verboso e 'f' determina o nome do arquivo final (tarball).",
+    "id": 1773320871446
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "No Active Directory do Windows Server, como é chamada a estrutura que engloba uma ou mais árvores de domínio que compartilham o mesmo esquema e catálogo global, mas não obrigatoriamente o mesmo namespace DNS?",
+    "opcoes": {
+      "A": "Unidade Organizacional (OU)",
+      "B": "Site",
+      "C": "Floresta (Forest)",
+      "D": "Controlador de Domínio (DC)"
+    },
+    "correta": "C",
+    "comentario": "A Floresta é o limite de segurança mais amplo do AD. Ela pode conter domínios com nomes totalmente diferentes (ex: empresa1.com e empresa2.com).",
+    "id": 1773320868640
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Em redes Windows, quando um usuário acessa um arquivo através de uma pasta compartilhada na rede, como as permissões são aplicadas?",
+    "opcoes": {
+      "A": "Apenas as permissões NTFS do arquivo são avaliadas.",
+      "B": "Apenas as permissões de Compartilhamento são avaliadas.",
+      "C": "Aplica-se a combinação mais restritiva entre as permissões de Compartilhamento e as permissões locais NTFS.",
+      "D": "Soma-se as permissões de Compartilhamento e NTFS, garantindo o nível de acesso mais alto."
+    },
+    "correta": "C",
+    "comentario": "Para acessos externos via rede, o sistema cruza as duas listas de segurança e aplica sempre a regra de acesso mais rígida (restritiva) entre as duas.",
+    "id": 1773320873233
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Se um cliente Windows configurado via DHCP falhar ao tentar contatar o servidor na rede, qual recurso nativo do sistema operacional atribuirá um IP provisório no bloco 169.254.x.x?",
+    "opcoes": {
+      "A": "NAT",
+      "B": "APIPA",
+      "C": "WINS",
+      "D": "IPsec"
+    },
+    "correta": "B",
+    "comentario": "O APIPA (Automatic Private IP Addressing) autoatribui um IP privado para garantir que a rede local básica continue operando mesmo sem o DHCP.",
+    "id": 1773320870341
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Em um servidor corporativo de correio eletrônico, quais protocolos são os padrões de mercado para o ENVIO e para a SINCRONIZAÇÃO/LEITURA das mensagens, respectivamente?",
+    "opcoes": {
+      "A": "POP3 e IMAP",
+      "B": "SMTP e IMAP",
+      "C": "IMAP e SMTP",
+      "D": "SMTP e SNMP"
+    },
+    "correta": "B",
+    "comentario": "O SMTP atua no envio/roteamento entre servidores (MTAs), enquanto o IMAP é usado pelos clientes de e-mail (MUA) para ler as caixas sem apagar do servidor.",
+    "id": 1773320873174
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Na gestão de chaves públicas do OpenSSH, em qual arquivo no SERVIDOR deve ser inserida a chave pública do cliente para permitir um login sem senha?",
+    "opcoes": {
+      "A": "/etc/ssh/sshd_config",
+      "B": "~/.ssh/id_rsa",
+      "C": "~/.ssh/authorized_keys",
+      "D": "/var/log/auth.log"
+    },
+    "correta": "C",
+    "comentario": "As chaves públicas (id_rsa.pub) geradas pelas estações de trabalho devem ser copiadas para o arquivo 'authorized_keys' dentro da conta do usuário no servidor.",
+    "id": 1773320874979
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Para garantir alta disponibilidade no serviço DNS BIND9, qual operação é executada para sincronizar automaticamente os registros de um servidor Mestre para um servidor Escravo?",
+    "opcoes": {
+      "A": "Encaminhamento (Forwarding)",
+      "B": "Transferência de Zona (Zone Transfer)",
+      "C": "Resolução Recursiva",
+      "D": "DNSSEC"
+    },
+    "correta": "B",
+    "comentario": "A Transferência de Zona (AXFR/IXFR) copia o banco de dados da zona do servidor Master para o Slave, mantendo a rede resiliente contra quedas.",
+    "id": 1773320868075
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Na gestão do DHCP, que funcionalidade garante que um dispositivo de infraestrutura (como uma catraca ou impressora) receba sempre o mesmo endereço IP automaticamente?",
+    "opcoes": {
+      "A": "Lease time infinito",
+      "B": "Exclusão de IP (Exclusion range)",
+      "C": "Reserva de IP via endereço MAC",
+      "D": "Criação de Superescopo"
+    },
+    "correta": "C",
+    "comentario": "A reserva de IP atrela um IP específico ao Endereço MAC físico da placa de rede, enviando sempre as mesmas configurações de IP para aquele equipamento.",
+    "id": 1773320868086
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Em ambiente Linux, qual utilitário de terminal é primariamente usado para realizar consultas e buscar objetos num servidor de diretórios OpenLDAP?",
+    "opcoes": {
+      "A": "ldapsearch",
+      "B": "ldappasswd",
+      "C": "slapd",
+      "D": "ldapadd"
+    },
+    "correta": "A",
+    "comentario": "O ldapsearch recebe filtros de pesquisa, autenticação (bind) e endereço do servidor para retornar as informações solicitadas (atributos) do banco LDAP.",
+    "id": 1773320868273
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "No Active Directory, os membros de qual grupo administrativo padrão têm poder absoluto e controle total sobre todos os computadores que fazem parte daquele domínio?",
+    "opcoes": {
+      "A": "Usuários do Domínio",
+      "B": "Administradores do Domínio (Domain Admins)",
+      "C": "Administradores Locais",
+      "D": "Operadores de Servidor"
+    },
+    "correta": "B",
+    "comentario": "Por padrão, o grupo 'Domain Admins' é injetado no grupo Administradores local de qualquer máquina conectada à rede, garantindo gestão centralizada total à TI.",
+    "id": 1773320871446
+  },
+  {
+    "materia": "2. Sistemas operacionais e ambiente operacional corporativo",
+    "pergunta": "Em um script Bash shell, qual palavra-chave é utilizada para determinar o fim de um bloco de condicional 'if'?",
+    "opcoes": {
+      "A": "endif",
+      "B": "end",
+      "C": "done",
+      "D": "fi"
+    },
+    "correta": "D",
+    "comentario": "O bloco começa com 'if' e é finalizado com 'fi' (if escrito de trás para frente). Em loops 'for/while', a terminação usada é 'done'.",
+    "id": 1773320870805
   }
 ]
