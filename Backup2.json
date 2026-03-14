@@ -1,17 +1,5 @@
 [
   {
-    "materia": "Língua Portuguesa",
-    "pergunta": "teste",
-    "opcoes": {
-      "A": "teste",
-      "B": "teste",
-      "C": "teste",
-      "D": "c"
-    },
-    "correta": "A",
-    "id": 1773320864431
-  },
-  {
     "materia": "Sistemas Computacionais",
     "pergunta": "Qual componente da CPU é responsável por gerenciar as temporizações e sinais que direcionam a operação do processador?",
     "opcoes": {
